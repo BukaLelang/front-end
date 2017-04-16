@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/xml/preferences.xml"
+    }
+]

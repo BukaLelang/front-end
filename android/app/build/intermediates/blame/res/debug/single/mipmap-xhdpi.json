@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/endy/darwins-fox-2017/front-end/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]
