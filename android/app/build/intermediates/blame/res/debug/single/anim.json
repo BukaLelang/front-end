@@ -12,12 +12,12 @@
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_in.xml"
     },
     {
-        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",

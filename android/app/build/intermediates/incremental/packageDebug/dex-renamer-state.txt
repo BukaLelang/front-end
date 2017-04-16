@@ -1,4 +1,4 @@
-#Sun Apr 16 17:12:06 WIB 2017
+#Sun Apr 16 20:25:27 WIB 2017
 base.0=/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

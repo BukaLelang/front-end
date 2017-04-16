@@ -16614,9 +16614,30 @@
                     "startLine": 1216,
                     "startColumn": 4,
                     "startOffset": 93861,
-                    "endLine": 1219,
+                    "endLine": 1223,
+                    "endColumn": 12,
+                    "endOffset": 94267
+                },
+                "from": {
+                    "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-image-picker/unspecified/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1224,
+                    "startColumn": 4,
+                    "startOffset": 94272,
+                    "endLine": 1227,
                     "endColumn": 10,
-                    "endOffset": 94040
+                    "endOffset": 94451
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -16632,12 +16653,12 @@
             },
             {
                 "to": {
-                    "startLine": 1220,
+                    "startLine": 1228,
                     "startColumn": 4,
-                    "startOffset": 94045,
-                    "endLine": 1223,
+                    "startOffset": 94456,
+                    "endLine": 1231,
                     "endColumn": 10,
-                    "endOffset": 94228
+                    "endOffset": 94639
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -16653,12 +16674,12 @@
             },
             {
                 "to": {
-                    "startLine": 1224,
+                    "startLine": 1232,
                     "startColumn": 4,
-                    "startOffset": 94233,
-                    "endLine": 1261,
+                    "startOffset": 94644,
+                    "endLine": 1269,
                     "endColumn": 12,
-                    "endOffset": 97090
+                    "endOffset": 97501
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16674,12 +16695,12 @@
             },
             {
                 "to": {
-                    "startLine": 1262,
+                    "startLine": 1270,
                     "startColumn": 4,
-                    "startOffset": 97095,
-                    "endLine": 1300,
+                    "startOffset": 97506,
+                    "endLine": 1308,
                     "endColumn": 12,
-                    "endOffset": 100092
+                    "endOffset": 100503
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16695,11 +16716,11 @@
             },
             {
                 "to": {
-                    "startLine": 1301,
+                    "startLine": 1309,
                     "startColumn": 4,
-                    "startOffset": 100097,
+                    "startOffset": 100508,
                     "endColumn": 61,
-                    "endOffset": 100154
+                    "endOffset": 100565
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16714,12 +16735,12 @@
             },
             {
                 "to": {
-                    "startLine": 1302,
+                    "startLine": 1310,
                     "startColumn": 4,
-                    "startOffset": 100159,
-                    "endLine": 1311,
+                    "startOffset": 100570,
+                    "endLine": 1319,
                     "endColumn": 12,
-                    "endOffset": 100784
+                    "endOffset": 101195
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16735,12 +16756,12 @@
             },
             {
                 "to": {
-                    "startLine": 1312,
+                    "startLine": 1320,
                     "startColumn": 4,
-                    "startOffset": 100789,
-                    "endLine": 1320,
+                    "startOffset": 101200,
+                    "endLine": 1328,
                     "endColumn": 12,
-                    "endOffset": 101398
+                    "endOffset": 101809
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16756,11 +16777,11 @@
             },
             {
                 "to": {
-                    "startLine": 1321,
+                    "startLine": 1329,
                     "startColumn": 4,
-                    "startOffset": 101403,
+                    "startOffset": 101814,
                     "endColumn": 85,
-                    "endOffset": 101484
+                    "endOffset": 101895
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16775,12 +16796,12 @@
             },
             {
                 "to": {
-                    "startLine": 1322,
+                    "startLine": 1330,
                     "startColumn": 4,
-                    "startOffset": 101489,
-                    "endLine": 1323,
+                    "startOffset": 101900,
+                    "endLine": 1331,
                     "endColumn": 12,
-                    "endOffset": 101597
+                    "endOffset": 102008
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16796,12 +16817,12 @@
             },
             {
                 "to": {
-                    "startLine": 1324,
+                    "startLine": 1332,
                     "startColumn": 4,
-                    "startOffset": 101602,
-                    "endLine": 1327,
+                    "startOffset": 102013,
+                    "endLine": 1335,
                     "endColumn": 12,
-                    "endOffset": 101826
+                    "endOffset": 102237
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16817,12 +16838,12 @@
             },
             {
                 "to": {
-                    "startLine": 1328,
+                    "startLine": 1336,
                     "startColumn": 4,
-                    "startOffset": 101831,
-                    "endLine": 1331,
+                    "startOffset": 102242,
+                    "endLine": 1339,
                     "endColumn": 12,
-                    "endOffset": 102164
+                    "endOffset": 102575
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16838,12 +16859,12 @@
             },
             {
                 "to": {
-                    "startLine": 1332,
+                    "startLine": 1340,
                     "startColumn": 4,
-                    "startOffset": 102169,
-                    "endLine": 1334,
+                    "startOffset": 102580,
+                    "endLine": 1342,
                     "endColumn": 12,
-                    "endOffset": 102324
+                    "endOffset": 102735
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16859,12 +16880,12 @@
             },
             {
                 "to": {
-                    "startLine": 1335,
+                    "startLine": 1343,
                     "startColumn": 4,
-                    "startOffset": 102329,
-                    "endLine": 1337,
+                    "startOffset": 102740,
+                    "endLine": 1345,
                     "endColumn": 12,
-                    "endOffset": 102476
+                    "endOffset": 102887
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16880,12 +16901,12 @@
             },
             {
                 "to": {
-                    "startLine": 1338,
+                    "startLine": 1346,
                     "startColumn": 4,
-                    "startOffset": 102481,
-                    "endLine": 1340,
+                    "startOffset": 102892,
+                    "endLine": 1348,
                     "endColumn": 12,
-                    "endOffset": 102647
+                    "endOffset": 103058
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16901,12 +16922,12 @@
             },
             {
                 "to": {
-                    "startLine": 1341,
+                    "startLine": 1349,
                     "startColumn": 4,
-                    "startOffset": 102652,
-                    "endLine": 1343,
+                    "startOffset": 103063,
+                    "endLine": 1351,
                     "endColumn": 12,
-                    "endOffset": 102814
+                    "endOffset": 103225
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16922,12 +16943,12 @@
             },
             {
                 "to": {
-                    "startLine": 1344,
+                    "startLine": 1352,
                     "startColumn": 4,
-                    "startOffset": 102819,
-                    "endLine": 1347,
+                    "startOffset": 103230,
+                    "endLine": 1355,
                     "endColumn": 12,
-                    "endOffset": 103057
+                    "endOffset": 103468
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16943,12 +16964,12 @@
             },
             {
                 "to": {
-                    "startLine": 1348,
+                    "startLine": 1356,
                     "startColumn": 4,
-                    "startOffset": 103062,
-                    "endLine": 1350,
+                    "startOffset": 103473,
+                    "endLine": 1358,
                     "endColumn": 12,
-                    "endOffset": 103227
+                    "endOffset": 103638
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16964,12 +16985,12 @@
             },
             {
                 "to": {
-                    "startLine": 1351,
+                    "startLine": 1359,
                     "startColumn": 4,
-                    "startOffset": 103232,
-                    "endLine": 1353,
+                    "startOffset": 103643,
+                    "endLine": 1361,
                     "endColumn": 12,
-                    "endOffset": 103400
+                    "endOffset": 103811
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -16985,12 +17006,12 @@
             },
             {
                 "to": {
-                    "startLine": 1354,
+                    "startLine": 1362,
                     "startColumn": 4,
-                    "startOffset": 103405,
-                    "endLine": 1356,
+                    "startOffset": 103816,
+                    "endLine": 1364,
                     "endColumn": 12,
-                    "endOffset": 103571
+                    "endOffset": 103982
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17006,12 +17027,12 @@
             },
             {
                 "to": {
-                    "startLine": 1357,
+                    "startLine": 1365,
                     "startColumn": 4,
-                    "startOffset": 103576,
-                    "endLine": 1360,
+                    "startOffset": 103987,
+                    "endLine": 1368,
                     "endColumn": 12,
-                    "endOffset": 103845
+                    "endOffset": 104256
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17027,12 +17048,12 @@
             },
             {
                 "to": {
-                    "startLine": 1361,
+                    "startLine": 1369,
                     "startColumn": 4,
-                    "startOffset": 103850,
-                    "endLine": 1363,
+                    "startOffset": 104261,
+                    "endLine": 1371,
                     "endColumn": 12,
-                    "endOffset": 104044
+                    "endOffset": 104455
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17048,12 +17069,12 @@
             },
             {
                 "to": {
-                    "startLine": 1364,
+                    "startLine": 1372,
                     "startColumn": 4,
-                    "startOffset": 104049,
-                    "endLine": 1366,
+                    "startOffset": 104460,
+                    "endLine": 1374,
                     "endColumn": 12,
-                    "endOffset": 104245
+                    "endOffset": 104656
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -17069,12 +17090,12 @@
             },
             {
                 "to": {
-                    "startLine": 1367,
+                    "startLine": 1375,
                     "startColumn": 4,
-                    "startOffset": 104250,
-                    "endLine": 1369,
+                    "startOffset": 104661,
+                    "endLine": 1377,
                     "endColumn": 12,
-                    "endOffset": 104434
+                    "endOffset": 104845
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -17090,11 +17111,11 @@
             },
             {
                 "to": {
-                    "startLine": 1370,
+                    "startLine": 1378,
                     "startColumn": 4,
-                    "startOffset": 104439,
+                    "startOffset": 104850,
                     "endColumn": 83,
-                    "endOffset": 104518
+                    "endOffset": 104929
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17109,11 +17130,11 @@
             },
             {
                 "to": {
-                    "startLine": 1371,
+                    "startLine": 1379,
                     "startColumn": 4,
-                    "startOffset": 104523,
+                    "startOffset": 104934,
                     "endColumn": 95,
-                    "endOffset": 104614
+                    "endOffset": 105025
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17128,11 +17149,11 @@
             },
             {
                 "to": {
-                    "startLine": 1372,
+                    "startLine": 1380,
                     "startColumn": 4,
-                    "startOffset": 104619,
+                    "startOffset": 105030,
                     "endColumn": 95,
-                    "endOffset": 104710
+                    "endOffset": 105121
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17147,11 +17168,11 @@
             },
             {
                 "to": {
-                    "startLine": 1373,
+                    "startLine": 1381,
                     "startColumn": 4,
-                    "startOffset": 104715,
+                    "startOffset": 105126,
                     "endColumn": 97,
-                    "endOffset": 104808
+                    "endOffset": 105219
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17166,11 +17187,11 @@
             },
             {
                 "to": {
-                    "startLine": 1374,
+                    "startLine": 1382,
                     "startColumn": 4,
-                    "startOffset": 104813,
+                    "startOffset": 105224,
                     "endColumn": 99,
-                    "endOffset": 104908
+                    "endOffset": 105319
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17185,11 +17206,11 @@
             },
             {
                 "to": {
-                    "startLine": 1375,
+                    "startLine": 1383,
                     "startColumn": 4,
-                    "startOffset": 104913,
+                    "startOffset": 105324,
                     "endColumn": 101,
-                    "endOffset": 105010
+                    "endOffset": 105421
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17204,11 +17225,11 @@
             },
             {
                 "to": {
-                    "startLine": 1376,
+                    "startLine": 1384,
                     "startColumn": 4,
-                    "startOffset": 105015,
+                    "startOffset": 105426,
                     "endColumn": 101,
-                    "endOffset": 105112
+                    "endOffset": 105523
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17223,11 +17244,11 @@
             },
             {
                 "to": {
-                    "startLine": 1377,
+                    "startLine": 1385,
                     "startColumn": 4,
-                    "startOffset": 105117,
+                    "startOffset": 105528,
                     "endColumn": 101,
-                    "endOffset": 105214
+                    "endOffset": 105625
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17242,11 +17263,11 @@
             },
             {
                 "to": {
-                    "startLine": 1378,
+                    "startLine": 1386,
                     "startColumn": 4,
-                    "startOffset": 105219,
+                    "startOffset": 105630,
                     "endColumn": 101,
-                    "endOffset": 105316
+                    "endOffset": 105727
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17261,11 +17282,11 @@
             },
             {
                 "to": {
-                    "startLine": 1379,
+                    "startLine": 1387,
                     "startColumn": 4,
-                    "startOffset": 105321,
+                    "startOffset": 105732,
                     "endColumn": 101,
-                    "endOffset": 105418
+                    "endOffset": 105829
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17280,11 +17301,11 @@
             },
             {
                 "to": {
-                    "startLine": 1380,
+                    "startLine": 1388,
                     "startColumn": 4,
-                    "startOffset": 105423,
+                    "startOffset": 105834,
                     "endColumn": 99,
-                    "endOffset": 105518
+                    "endOffset": 105929
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17299,11 +17320,11 @@
             },
             {
                 "to": {
-                    "startLine": 1381,
+                    "startLine": 1389,
                     "startColumn": 4,
-                    "startOffset": 105523,
+                    "startOffset": 105934,
                     "endColumn": 95,
-                    "endOffset": 105614
+                    "endOffset": 106025
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17318,11 +17339,11 @@
             },
             {
                 "to": {
-                    "startLine": 1382,
+                    "startLine": 1390,
                     "startColumn": 4,
-                    "startOffset": 105619,
+                    "startOffset": 106030,
                     "endColumn": 111,
-                    "endOffset": 105726
+                    "endOffset": 106137
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17337,11 +17358,11 @@
             },
             {
                 "to": {
-                    "startLine": 1383,
+                    "startLine": 1391,
                     "startColumn": 4,
-                    "startOffset": 105731,
+                    "startOffset": 106142,
                     "endColumn": 128,
-                    "endOffset": 105855
+                    "endOffset": 106266
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17356,11 +17377,11 @@
             },
             {
                 "to": {
-                    "startLine": 1384,
+                    "startLine": 1392,
                     "startColumn": 4,
-                    "startOffset": 105860,
+                    "startOffset": 106271,
                     "endColumn": 122,
-                    "endOffset": 105978
+                    "endOffset": 106389
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17375,12 +17396,12 @@
             },
             {
                 "to": {
-                    "startLine": 1385,
+                    "startLine": 1393,
                     "startColumn": 4,
-                    "startOffset": 105983,
-                    "endLine": 1386,
+                    "startOffset": 106394,
+                    "endLine": 1394,
                     "endColumn": 12,
-                    "endOffset": 106132
+                    "endOffset": 106543
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17396,12 +17417,12 @@
             },
             {
                 "to": {
-                    "startLine": 1387,
+                    "startLine": 1395,
                     "startColumn": 4,
-                    "startOffset": 106137,
-                    "endLine": 1388,
+                    "startOffset": 106548,
+                    "endLine": 1396,
                     "endColumn": 12,
-                    "endOffset": 106286
+                    "endOffset": 106697
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17417,11 +17438,11 @@
             },
             {
                 "to": {
-                    "startLine": 1389,
+                    "startLine": 1397,
                     "startColumn": 4,
-                    "startOffset": 106291,
+                    "startOffset": 106702,
                     "endColumn": 97,
-                    "endOffset": 106384
+                    "endOffset": 106795
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17436,11 +17457,11 @@
             },
             {
                 "to": {
-                    "startLine": 1390,
+                    "startLine": 1398,
                     "startColumn": 4,
-                    "startOffset": 106389,
+                    "startOffset": 106800,
                     "endColumn": 113,
-                    "endOffset": 106498
+                    "endOffset": 106909
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17455,11 +17476,11 @@
             },
             {
                 "to": {
-                    "startLine": 1391,
+                    "startLine": 1399,
                     "startColumn": 4,
-                    "startOffset": 106503,
+                    "startOffset": 106914,
                     "endColumn": 93,
-                    "endOffset": 106592
+                    "endOffset": 107003
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17474,12 +17495,12 @@
             },
             {
                 "to": {
-                    "startLine": 1392,
+                    "startLine": 1400,
                     "startColumn": 4,
-                    "startOffset": 106597,
-                    "endLine": 1393,
+                    "startOffset": 107008,
+                    "endLine": 1401,
                     "endColumn": 12,
-                    "endOffset": 106732
+                    "endOffset": 107143
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17495,12 +17516,12 @@
             },
             {
                 "to": {
-                    "startLine": 1394,
+                    "startLine": 1402,
                     "startColumn": 4,
-                    "startOffset": 106737,
-                    "endLine": 1395,
+                    "startOffset": 107148,
+                    "endLine": 1403,
                     "endColumn": 12,
-                    "endOffset": 106866
+                    "endOffset": 107277
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17516,11 +17537,11 @@
             },
             {
                 "to": {
-                    "startLine": 1396,
+                    "startLine": 1404,
                     "startColumn": 4,
-                    "startOffset": 106871,
+                    "startOffset": 107282,
                     "endColumn": 95,
-                    "endOffset": 106962
+                    "endOffset": 107373
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17535,11 +17556,11 @@
             },
             {
                 "to": {
-                    "startLine": 1397,
+                    "startLine": 1405,
                     "startColumn": 4,
-                    "startOffset": 106967,
+                    "startOffset": 107378,
                     "endColumn": 111,
-                    "endOffset": 107074
+                    "endOffset": 107485
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17554,11 +17575,11 @@
             },
             {
                 "to": {
-                    "startLine": 1398,
+                    "startLine": 1406,
                     "startColumn": 4,
-                    "startOffset": 107079,
+                    "startOffset": 107490,
                     "endColumn": 99,
-                    "endOffset": 107174
+                    "endOffset": 107585
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17573,11 +17594,11 @@
             },
             {
                 "to": {
-                    "startLine": 1399,
+                    "startLine": 1407,
                     "startColumn": 4,
-                    "startOffset": 107179,
+                    "startOffset": 107590,
                     "endColumn": 115,
-                    "endOffset": 107290
+                    "endOffset": 107701
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17592,11 +17613,11 @@
             },
             {
                 "to": {
-                    "startLine": 1400,
+                    "startLine": 1408,
                     "startColumn": 4,
-                    "startOffset": 107295,
+                    "startOffset": 107706,
                     "endColumn": 95,
-                    "endOffset": 107386
+                    "endOffset": 107797
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17611,11 +17632,11 @@
             },
             {
                 "to": {
-                    "startLine": 1401,
+                    "startLine": 1409,
                     "startColumn": 4,
-                    "startOffset": 107391,
+                    "startOffset": 107802,
                     "endColumn": 111,
-                    "endOffset": 107498
+                    "endOffset": 107909
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17630,12 +17651,12 @@
             },
             {
                 "to": {
-                    "startLine": 1402,
+                    "startLine": 1410,
                     "startColumn": 4,
-                    "startOffset": 107503,
-                    "endLine": 1403,
+                    "startOffset": 107914,
+                    "endLine": 1411,
                     "endColumn": 12,
-                    "endOffset": 107638
+                    "endOffset": 108049
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17651,11 +17672,11 @@
             },
             {
                 "to": {
-                    "startLine": 1404,
+                    "startLine": 1412,
                     "startColumn": 4,
-                    "startOffset": 107643,
+                    "startOffset": 108054,
                     "endColumn": 135,
-                    "endOffset": 107774
+                    "endOffset": 108185
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17670,12 +17691,12 @@
             },
             {
                 "to": {
-                    "startLine": 1405,
+                    "startLine": 1413,
                     "startColumn": 4,
-                    "startOffset": 107779,
-                    "endLine": 1406,
+                    "startOffset": 108190,
+                    "endLine": 1414,
                     "endColumn": 12,
-                    "endOffset": 107938
+                    "endOffset": 108349
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17691,11 +17712,11 @@
             },
             {
                 "to": {
-                    "startLine": 1407,
+                    "startLine": 1415,
                     "startColumn": 4,
-                    "startOffset": 107943,
+                    "startOffset": 108354,
                     "endColumn": 129,
-                    "endOffset": 108068
+                    "endOffset": 108479
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17710,12 +17731,12 @@
             },
             {
                 "to": {
-                    "startLine": 1408,
+                    "startLine": 1416,
                     "startColumn": 4,
-                    "startOffset": 108073,
-                    "endLine": 1409,
+                    "startOffset": 108484,
+                    "endLine": 1417,
                     "endColumn": 12,
-                    "endOffset": 108226
+                    "endOffset": 108637
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17731,12 +17752,12 @@
             },
             {
                 "to": {
-                    "startLine": 1410,
+                    "startLine": 1418,
                     "startColumn": 4,
-                    "startOffset": 108231,
-                    "endLine": 1411,
+                    "startOffset": 108642,
+                    "endLine": 1419,
                     "endColumn": 12,
-                    "endOffset": 108376
+                    "endOffset": 108787
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17752,11 +17773,11 @@
             },
             {
                 "to": {
-                    "startLine": 1412,
+                    "startLine": 1420,
                     "startColumn": 4,
-                    "startOffset": 108381,
+                    "startOffset": 108792,
                     "endColumn": 140,
-                    "endOffset": 108517
+                    "endOffset": 108928
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17771,12 +17792,12 @@
             },
             {
                 "to": {
-                    "startLine": 1413,
+                    "startLine": 1421,
                     "startColumn": 4,
-                    "startOffset": 108522,
-                    "endLine": 1414,
+                    "startOffset": 108933,
+                    "endLine": 1422,
                     "endColumn": 12,
-                    "endOffset": 108661
+                    "endOffset": 109072
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17792,11 +17813,11 @@
             },
             {
                 "to": {
-                    "startLine": 1415,
+                    "startLine": 1423,
                     "startColumn": 4,
-                    "startOffset": 108666,
+                    "startOffset": 109077,
                     "endColumn": 134,
-                    "endOffset": 108796
+                    "endOffset": 109207
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17811,11 +17832,11 @@
             },
             {
                 "to": {
-                    "startLine": 1416,
+                    "startLine": 1424,
                     "startColumn": 4,
-                    "startOffset": 108801,
+                    "startOffset": 109212,
                     "endColumn": 111,
-                    "endOffset": 108908
+                    "endOffset": 109319
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17830,11 +17851,11 @@
             },
             {
                 "to": {
-                    "startLine": 1417,
+                    "startLine": 1425,
                     "startColumn": 4,
-                    "startOffset": 108913,
+                    "startOffset": 109324,
                     "endColumn": 127,
-                    "endOffset": 109036
+                    "endOffset": 109447
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17849,12 +17870,12 @@
             },
             {
                 "to": {
-                    "startLine": 1418,
+                    "startLine": 1426,
                     "startColumn": 4,
-                    "startOffset": 109041,
-                    "endLine": 1419,
+                    "startOffset": 109452,
+                    "endLine": 1427,
                     "endColumn": 12,
-                    "endOffset": 109172
+                    "endOffset": 109583
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17870,12 +17891,12 @@
             },
             {
                 "to": {
-                    "startLine": 1420,
+                    "startLine": 1428,
                     "startColumn": 4,
-                    "startOffset": 109177,
-                    "endLine": 1421,
+                    "startOffset": 109588,
+                    "endLine": 1429,
                     "endColumn": 12,
-                    "endOffset": 109314
+                    "endOffset": 109725
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17891,12 +17912,12 @@
             },
             {
                 "to": {
-                    "startLine": 1422,
+                    "startLine": 1430,
                     "startColumn": 4,
-                    "startOffset": 109319,
-                    "endLine": 1423,
+                    "startOffset": 109730,
+                    "endLine": 1431,
                     "endColumn": 12,
-                    "endOffset": 109456
+                    "endOffset": 109867
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17912,11 +17933,11 @@
             },
             {
                 "to": {
-                    "startLine": 1424,
+                    "startLine": 1432,
                     "startColumn": 4,
-                    "startOffset": 109461,
+                    "startOffset": 109872,
                     "endColumn": 111,
-                    "endOffset": 109568
+                    "endOffset": 109979
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17931,11 +17952,11 @@
             },
             {
                 "to": {
-                    "startLine": 1425,
+                    "startLine": 1433,
                     "startColumn": 4,
-                    "startOffset": 109573,
+                    "startOffset": 109984,
                     "endColumn": 139,
-                    "endOffset": 109708
+                    "endOffset": 110119
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17950,11 +17971,11 @@
             },
             {
                 "to": {
-                    "startLine": 1426,
+                    "startLine": 1434,
                     "startColumn": 4,
-                    "startOffset": 109713,
+                    "startOffset": 110124,
                     "endColumn": 67,
-                    "endOffset": 109776
+                    "endOffset": 110187
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17969,11 +17990,11 @@
             },
             {
                 "to": {
-                    "startLine": 1427,
+                    "startLine": 1435,
                     "startColumn": 4,
-                    "startOffset": 109781,
+                    "startOffset": 110192,
                     "endColumn": 72,
-                    "endOffset": 109849
+                    "endOffset": 110260
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -17988,11 +18009,11 @@
             },
             {
                 "to": {
-                    "startLine": 1428,
+                    "startLine": 1436,
                     "startColumn": 4,
-                    "startOffset": 109854,
+                    "startOffset": 110265,
                     "endColumn": 73,
-                    "endOffset": 109923
+                    "endOffset": 110334
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18007,11 +18028,11 @@
             },
             {
                 "to": {
-                    "startLine": 1429,
+                    "startLine": 1437,
                     "startColumn": 4,
-                    "startOffset": 109928,
+                    "startOffset": 110339,
                     "endColumn": 72,
-                    "endOffset": 109996
+                    "endOffset": 110407
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18026,11 +18047,11 @@
             },
             {
                 "to": {
-                    "startLine": 1430,
+                    "startLine": 1438,
                     "startColumn": 4,
-                    "startOffset": 110001,
+                    "startOffset": 110412,
                     "endColumn": 73,
-                    "endOffset": 110070
+                    "endOffset": 110481
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18045,12 +18066,12 @@
             },
             {
                 "to": {
-                    "startLine": 1431,
+                    "startLine": 1439,
                     "startColumn": 4,
-                    "startOffset": 110075,
-                    "endLine": 1432,
+                    "startOffset": 110486,
+                    "endLine": 1440,
                     "endColumn": 12,
-                    "endOffset": 110216
+                    "endOffset": 110627
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18066,12 +18087,12 @@
             },
             {
                 "to": {
-                    "startLine": 1433,
+                    "startLine": 1441,
                     "startColumn": 4,
-                    "startOffset": 110221,
-                    "endLine": 1434,
+                    "startOffset": 110632,
+                    "endLine": 1442,
                     "endColumn": 12,
-                    "endOffset": 110360
+                    "endOffset": 110771
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18087,12 +18108,12 @@
             },
             {
                 "to": {
-                    "startLine": 1435,
+                    "startLine": 1443,
                     "startColumn": 4,
-                    "startOffset": 110365,
-                    "endLine": 1436,
+                    "startOffset": 110776,
+                    "endLine": 1444,
                     "endColumn": 12,
-                    "endOffset": 110498
+                    "endOffset": 110909
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18108,11 +18129,11 @@
             },
             {
                 "to": {
-                    "startLine": 1437,
+                    "startLine": 1445,
                     "startColumn": 4,
-                    "startOffset": 110503,
+                    "startOffset": 110914,
                     "endColumn": 25,
-                    "endOffset": 110524
+                    "endOffset": 110935
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18127,11 +18148,11 @@
             },
             {
                 "to": {
-                    "startLine": 1438,
+                    "startLine": 1446,
                     "startColumn": 4,
-                    "startOffset": 110529,
+                    "startOffset": 110940,
                     "endColumn": 65,
-                    "endOffset": 110590
+                    "endOffset": 111001
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18146,11 +18167,11 @@
             },
             {
                 "to": {
-                    "startLine": 1439,
+                    "startLine": 1447,
                     "startColumn": 4,
-                    "startOffset": 110595,
+                    "startOffset": 111006,
                     "endColumn": 89,
-                    "endOffset": 110680
+                    "endOffset": 111091
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18165,11 +18186,11 @@
             },
             {
                 "to": {
-                    "startLine": 1440,
+                    "startLine": 1448,
                     "startColumn": 4,
-                    "startOffset": 110685,
+                    "startOffset": 111096,
                     "endColumn": 79,
-                    "endOffset": 110760
+                    "endOffset": 111171
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18184,11 +18205,11 @@
             },
             {
                 "to": {
-                    "startLine": 1441,
+                    "startLine": 1449,
                     "startColumn": 4,
-                    "startOffset": 110765,
+                    "startOffset": 111176,
                     "endColumn": 91,
-                    "endOffset": 110852
+                    "endOffset": 111263
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18203,11 +18224,11 @@
             },
             {
                 "to": {
-                    "startLine": 1442,
+                    "startLine": 1450,
                     "startColumn": 4,
-                    "startOffset": 110857,
+                    "startOffset": 111268,
                     "endColumn": 97,
-                    "endOffset": 110950
+                    "endOffset": 111361
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18222,12 +18243,12 @@
             },
             {
                 "to": {
-                    "startLine": 1443,
+                    "startLine": 1451,
                     "startColumn": 4,
-                    "startOffset": 110955,
-                    "endLine": 1444,
+                    "startOffset": 111366,
+                    "endLine": 1452,
                     "endColumn": 12,
-                    "endOffset": 111060
+                    "endOffset": 111471
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18243,11 +18264,11 @@
             },
             {
                 "to": {
-                    "startLine": 1445,
+                    "startLine": 1453,
                     "startColumn": 4,
-                    "startOffset": 111065,
+                    "startOffset": 111476,
                     "endColumn": 77,
-                    "endOffset": 111138
+                    "endOffset": 111549
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18262,11 +18283,11 @@
             },
             {
                 "to": {
-                    "startLine": 1446,
+                    "startLine": 1454,
                     "startColumn": 4,
-                    "startOffset": 111143,
+                    "startOffset": 111554,
                     "endColumn": 105,
-                    "endOffset": 111244
+                    "endOffset": 111655
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18281,11 +18302,11 @@
             },
             {
                 "to": {
-                    "startLine": 1447,
+                    "startLine": 1455,
                     "startColumn": 4,
-                    "startOffset": 111249,
+                    "startOffset": 111660,
                     "endColumn": 91,
-                    "endOffset": 111336
+                    "endOffset": 111747
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18300,11 +18321,11 @@
             },
             {
                 "to": {
-                    "startLine": 1448,
+                    "startLine": 1456,
                     "startColumn": 4,
-                    "startOffset": 111341,
+                    "startOffset": 111752,
                     "endColumn": 103,
-                    "endOffset": 111440
+                    "endOffset": 111851
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18319,11 +18340,11 @@
             },
             {
                 "to": {
-                    "startLine": 1449,
+                    "startLine": 1457,
                     "startColumn": 4,
-                    "startOffset": 111445,
+                    "startOffset": 111856,
                     "endColumn": 109,
-                    "endOffset": 111550
+                    "endOffset": 111961
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18338,12 +18359,12 @@
             },
             {
                 "to": {
-                    "startLine": 1450,
+                    "startLine": 1458,
                     "startColumn": 4,
-                    "startOffset": 111555,
-                    "endLine": 1451,
+                    "startOffset": 111966,
+                    "endLine": 1459,
                     "endColumn": 12,
-                    "endOffset": 111672
+                    "endOffset": 112083
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18359,12 +18380,12 @@
             },
             {
                 "to": {
-                    "startLine": 1452,
+                    "startLine": 1460,
                     "startColumn": 4,
-                    "startOffset": 111677,
-                    "endLine": 1455,
+                    "startOffset": 112088,
+                    "endLine": 1463,
                     "endColumn": 12,
-                    "endOffset": 111835
+                    "endOffset": 112246
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18380,12 +18401,12 @@
             },
             {
                 "to": {
-                    "startLine": 1456,
+                    "startLine": 1464,
                     "startColumn": 4,
-                    "startOffset": 111840,
-                    "endLine": 1459,
+                    "startOffset": 112251,
+                    "endLine": 1467,
                     "endColumn": 12,
-                    "endOffset": 111992
+                    "endOffset": 112403
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18401,11 +18422,11 @@
             },
             {
                 "to": {
-                    "startLine": 1460,
+                    "startLine": 1468,
                     "startColumn": 4,
-                    "startOffset": 111997,
+                    "startOffset": 112408,
                     "endColumn": 34,
-                    "endOffset": 112027
+                    "endOffset": 112438
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18420,12 +18441,12 @@
             },
             {
                 "to": {
-                    "startLine": 1461,
+                    "startLine": 1469,
                     "startColumn": 4,
-                    "startOffset": 112032,
-                    "endLine": 1467,
+                    "startOffset": 112443,
+                    "endLine": 1475,
                     "endColumn": 10,
-                    "endOffset": 112493
+                    "endOffset": 112904
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18441,12 +18462,12 @@
             },
             {
                 "to": {
-                    "startLine": 1468,
+                    "startLine": 1476,
                     "startColumn": 4,
-                    "startOffset": 112498,
-                    "endLine": 1473,
+                    "startOffset": 112909,
+                    "endLine": 1481,
                     "endColumn": 10,
-                    "endOffset": 112789
+                    "endOffset": 113200
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18462,12 +18483,12 @@
             },
             {
                 "to": {
-                    "startLine": 1474,
+                    "startLine": 1482,
                     "startColumn": 4,
-                    "startOffset": 112794,
-                    "endLine": 1476,
+                    "startOffset": 113205,
+                    "endLine": 1484,
                     "endColumn": 10,
-                    "endOffset": 112966
+                    "endOffset": 113377
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18483,12 +18504,12 @@
             },
             {
                 "to": {
-                    "startLine": 1477,
+                    "startLine": 1485,
                     "startColumn": 4,
-                    "startOffset": 112971,
-                    "endLine": 1479,
+                    "startOffset": 113382,
+                    "endLine": 1487,
                     "endColumn": 10,
-                    "endOffset": 113145
+                    "endOffset": 113556
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18504,12 +18525,12 @@
             },
             {
                 "to": {
-                    "startLine": 1480,
+                    "startLine": 1488,
                     "startColumn": 4,
-                    "startOffset": 113150,
-                    "endLine": 1482,
+                    "startOffset": 113561,
+                    "endLine": 1490,
                     "endColumn": 12,
-                    "endOffset": 113328
+                    "endOffset": 113739
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18525,12 +18546,12 @@
             },
             {
                 "to": {
-                    "startLine": 1483,
+                    "startLine": 1491,
                     "startColumn": 4,
-                    "startOffset": 113333,
-                    "endLine": 1488,
+                    "startOffset": 113744,
+                    "endLine": 1496,
                     "endColumn": 12,
-                    "endOffset": 113693
+                    "endOffset": 114104
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/values/values.xml",
@@ -18546,11 +18567,11 @@
             },
             {
                 "to": {
-                    "startLine": 1489,
+                    "startLine": 1497,
                     "startColumn": 4,
-                    "startOffset": 113698,
+                    "startOffset": 114109,
                     "endColumn": 79,
-                    "endOffset": 113773
+                    "endOffset": 114184
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18565,11 +18586,11 @@
             },
             {
                 "to": {
-                    "startLine": 1490,
+                    "startLine": 1498,
                     "startColumn": 4,
-                    "startOffset": 113778,
+                    "startOffset": 114189,
                     "endColumn": 99,
-                    "endOffset": 113873
+                    "endOffset": 114284
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18584,11 +18605,11 @@
             },
             {
                 "to": {
-                    "startLine": 1491,
+                    "startLine": 1499,
                     "startColumn": 4,
-                    "startOffset": 113878,
+                    "startOffset": 114289,
                     "endColumn": 89,
-                    "endOffset": 113963
+                    "endOffset": 114374
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18603,11 +18624,11 @@
             },
             {
                 "to": {
-                    "startLine": 1492,
+                    "startLine": 1500,
                     "startColumn": 4,
-                    "startOffset": 113968,
+                    "startOffset": 114379,
                     "endColumn": 109,
-                    "endOffset": 114073
+                    "endOffset": 114484
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18622,11 +18643,11 @@
             },
             {
                 "to": {
-                    "startLine": 1493,
+                    "startLine": 1501,
                     "startColumn": 4,
-                    "startOffset": 114078,
+                    "startOffset": 114489,
                     "endColumn": 91,
-                    "endOffset": 114165
+                    "endOffset": 114576
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18641,12 +18662,12 @@
             },
             {
                 "to": {
-                    "startLine": 1494,
+                    "startLine": 1502,
                     "startColumn": 4,
-                    "startOffset": 114170,
-                    "endLine": 1495,
+                    "startOffset": 114581,
+                    "endLine": 1503,
                     "endColumn": 12,
-                    "endOffset": 114265
+                    "endOffset": 114676
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18662,12 +18683,12 @@
             },
             {
                 "to": {
-                    "startLine": 1496,
+                    "startLine": 1504,
                     "startColumn": 4,
-                    "startOffset": 114270,
-                    "endLine": 1497,
+                    "startOffset": 114681,
+                    "endLine": 1505,
                     "endColumn": 12,
-                    "endOffset": 114377
+                    "endOffset": 114788
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18683,12 +18704,12 @@
             },
             {
                 "to": {
-                    "startLine": 1498,
+                    "startLine": 1506,
                     "startColumn": 4,
-                    "startOffset": 114382,
-                    "endLine": 1499,
+                    "startOffset": 114793,
+                    "endLine": 1507,
                     "endColumn": 12,
-                    "endOffset": 114491
+                    "endOffset": 114902
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18704,12 +18725,12 @@
             },
             {
                 "to": {
-                    "startLine": 1500,
+                    "startLine": 1508,
                     "startColumn": 4,
-                    "startOffset": 114496,
-                    "endLine": 1501,
+                    "startOffset": 114907,
+                    "endLine": 1509,
                     "endColumn": 12,
-                    "endOffset": 114607
+                    "endOffset": 115018
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18725,12 +18746,12 @@
             },
             {
                 "to": {
-                    "startLine": 1502,
+                    "startLine": 1510,
                     "startColumn": 4,
-                    "startOffset": 114612,
-                    "endLine": 1503,
+                    "startOffset": 115023,
+                    "endLine": 1511,
                     "endColumn": 12,
-                    "endOffset": 114723
+                    "endOffset": 115134
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18746,11 +18767,11 @@
             },
             {
                 "to": {
-                    "startLine": 1504,
+                    "startLine": 1512,
                     "startColumn": 4,
-                    "startOffset": 114728,
+                    "startOffset": 115139,
                     "endColumn": 93,
-                    "endOffset": 114817
+                    "endOffset": 115228
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18765,11 +18786,11 @@
             },
             {
                 "to": {
-                    "startLine": 1505,
+                    "startLine": 1513,
                     "startColumn": 4,
-                    "startOffset": 114822,
+                    "startOffset": 115233,
                     "endColumn": 113,
-                    "endOffset": 114931
+                    "endOffset": 115342
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18784,11 +18805,11 @@
             },
             {
                 "to": {
-                    "startLine": 1506,
+                    "startLine": 1514,
                     "startColumn": 4,
-                    "startOffset": 114936,
+                    "startOffset": 115347,
                     "endColumn": 117,
-                    "endOffset": 115049
+                    "endOffset": 115460
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18803,12 +18824,12 @@
             },
             {
                 "to": {
-                    "startLine": 1507,
+                    "startLine": 1515,
                     "startColumn": 4,
-                    "startOffset": 115054,
-                    "endLine": 1508,
+                    "startOffset": 115465,
+                    "endLine": 1516,
                     "endColumn": 12,
-                    "endOffset": 115151
+                    "endOffset": 115562
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18824,12 +18845,12 @@
             },
             {
                 "to": {
-                    "startLine": 1509,
+                    "startLine": 1517,
                     "startColumn": 4,
-                    "startOffset": 115156,
-                    "endLine": 1510,
+                    "startOffset": 115567,
+                    "endLine": 1518,
                     "endColumn": 12,
-                    "endOffset": 115271
+                    "endOffset": 115682
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18845,12 +18866,12 @@
             },
             {
                 "to": {
-                    "startLine": 1511,
+                    "startLine": 1519,
                     "startColumn": 4,
-                    "startOffset": 115276,
-                    "endLine": 1512,
+                    "startOffset": 115687,
+                    "endLine": 1520,
                     "endColumn": 12,
-                    "endOffset": 115393
+                    "endOffset": 115804
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18866,11 +18887,11 @@
             },
             {
                 "to": {
-                    "startLine": 1513,
+                    "startLine": 1521,
                     "startColumn": 4,
-                    "startOffset": 115398,
+                    "startOffset": 115809,
                     "endColumn": 81,
-                    "endOffset": 115475
+                    "endOffset": 115886
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18885,11 +18906,11 @@
             },
             {
                 "to": {
-                    "startLine": 1514,
+                    "startLine": 1522,
                     "startColumn": 4,
-                    "startOffset": 115480,
+                    "startOffset": 115891,
                     "endColumn": 103,
-                    "endOffset": 115579
+                    "endOffset": 115990
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18904,11 +18925,11 @@
             },
             {
                 "to": {
-                    "startLine": 1515,
+                    "startLine": 1523,
                     "startColumn": 4,
-                    "startOffset": 115584,
+                    "startOffset": 115995,
                     "endColumn": 119,
-                    "endOffset": 115699
+                    "endOffset": 116110
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18923,11 +18944,11 @@
             },
             {
                 "to": {
-                    "startLine": 1516,
+                    "startLine": 1524,
                     "startColumn": 4,
-                    "startOffset": 115704,
+                    "startOffset": 116115,
                     "endColumn": 125,
-                    "endOffset": 115825
+                    "endOffset": 116236
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18942,11 +18963,11 @@
             },
             {
                 "to": {
-                    "startLine": 1517,
+                    "startLine": 1525,
                     "startColumn": 4,
-                    "startOffset": 115830,
+                    "startOffset": 116241,
                     "endColumn": 97,
-                    "endOffset": 115923
+                    "endOffset": 116334
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18961,11 +18982,11 @@
             },
             {
                 "to": {
-                    "startLine": 1518,
+                    "startLine": 1526,
                     "startColumn": 4,
-                    "startOffset": 115928,
+                    "startOffset": 116339,
                     "endColumn": 93,
-                    "endOffset": 116017
+                    "endOffset": 116428
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18980,11 +19001,11 @@
             },
             {
                 "to": {
-                    "startLine": 1519,
+                    "startLine": 1527,
                     "startColumn": 4,
-                    "startOffset": 116022,
+                    "startOffset": 116433,
                     "endColumn": 87,
-                    "endOffset": 116105
+                    "endOffset": 116516
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -18999,11 +19020,11 @@
             },
             {
                 "to": {
-                    "startLine": 1520,
+                    "startLine": 1528,
                     "startColumn": 4,
-                    "startOffset": 116110,
+                    "startOffset": 116521,
                     "endColumn": 111,
-                    "endOffset": 116217
+                    "endOffset": 116628
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19018,11 +19039,11 @@
             },
             {
                 "to": {
-                    "startLine": 1521,
+                    "startLine": 1529,
                     "startColumn": 4,
-                    "startOffset": 116222,
+                    "startOffset": 116633,
                     "endColumn": 115,
-                    "endOffset": 116333
+                    "endOffset": 116744
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19037,11 +19058,11 @@
             },
             {
                 "to": {
-                    "startLine": 1522,
+                    "startLine": 1530,
                     "startColumn": 4,
-                    "startOffset": 116338,
+                    "startOffset": 116749,
                     "endColumn": 121,
-                    "endOffset": 116455
+                    "endOffset": 116866
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19056,11 +19077,11 @@
             },
             {
                 "to": {
-                    "startLine": 1523,
+                    "startLine": 1531,
                     "startColumn": 4,
-                    "startOffset": 116460,
+                    "startOffset": 116871,
                     "endColumn": 111,
-                    "endOffset": 116567
+                    "endOffset": 116978
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19075,12 +19096,12 @@
             },
             {
                 "to": {
-                    "startLine": 1524,
+                    "startLine": 1532,
                     "startColumn": 4,
-                    "startOffset": 116572,
-                    "endLine": 1526,
+                    "startOffset": 116983,
+                    "endLine": 1534,
                     "endColumn": 12,
-                    "endOffset": 116742
+                    "endOffset": 117153
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19096,11 +19117,11 @@
             },
             {
                 "to": {
-                    "startLine": 1527,
+                    "startLine": 1535,
                     "startColumn": 4,
-                    "startOffset": 116747,
+                    "startOffset": 117158,
                     "endColumn": 115,
-                    "endOffset": 116858
+                    "endOffset": 117269
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19115,11 +19136,11 @@
             },
             {
                 "to": {
-                    "startLine": 1528,
+                    "startLine": 1536,
                     "startColumn": 4,
-                    "startOffset": 116863,
+                    "startOffset": 117274,
                     "endColumn": 85,
-                    "endOffset": 116944
+                    "endOffset": 117355
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19134,12 +19155,12 @@
             },
             {
                 "to": {
-                    "startLine": 1529,
+                    "startLine": 1537,
                     "startColumn": 4,
-                    "startOffset": 116949,
-                    "endLine": 1530,
+                    "startOffset": 117360,
+                    "endLine": 1538,
                     "endColumn": 12,
-                    "endOffset": 117056
+                    "endOffset": 117467
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19155,12 +19176,12 @@
             },
             {
                 "to": {
-                    "startLine": 1531,
+                    "startLine": 1539,
                     "startColumn": 4,
-                    "startOffset": 117061,
-                    "endLine": 1532,
+                    "startOffset": 117472,
+                    "endLine": 1540,
                     "endColumn": 12,
-                    "endOffset": 117180
+                    "endOffset": 117591
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19176,11 +19197,11 @@
             },
             {
                 "to": {
-                    "startLine": 1533,
+                    "startLine": 1541,
                     "startColumn": 4,
-                    "startOffset": 117185,
+                    "startOffset": 117596,
                     "endColumn": 66,
-                    "endOffset": 117247
+                    "endOffset": 117658
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19195,12 +19216,12 @@
             },
             {
                 "to": {
-                    "startLine": 1534,
+                    "startLine": 1542,
                     "startColumn": 4,
-                    "startOffset": 117252,
-                    "endLine": 1535,
+                    "startOffset": 117663,
+                    "endLine": 1543,
                     "endColumn": 12,
-                    "endOffset": 117373
+                    "endOffset": 117784
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19216,11 +19237,11 @@
             },
             {
                 "to": {
-                    "startLine": 1536,
+                    "startLine": 1544,
                     "startColumn": 4,
-                    "startOffset": 117378,
+                    "startOffset": 117789,
                     "endColumn": 67,
-                    "endOffset": 117441
+                    "endOffset": 117852
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19235,12 +19256,12 @@
             },
             {
                 "to": {
-                    "startLine": 1537,
+                    "startLine": 1545,
                     "startColumn": 4,
-                    "startOffset": 117446,
-                    "endLine": 1538,
+                    "startOffset": 117857,
+                    "endLine": 1546,
                     "endColumn": 12,
-                    "endOffset": 117569
+                    "endOffset": 117980
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19256,12 +19277,12 @@
             },
             {
                 "to": {
-                    "startLine": 1539,
+                    "startLine": 1547,
                     "startColumn": 4,
-                    "startOffset": 117574,
-                    "endLine": 1540,
+                    "startOffset": 117985,
+                    "endLine": 1548,
                     "endColumn": 12,
-                    "endOffset": 117713
+                    "endOffset": 118124
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19277,12 +19298,12 @@
             },
             {
                 "to": {
-                    "startLine": 1541,
+                    "startLine": 1549,
                     "startColumn": 4,
-                    "startOffset": 117718,
-                    "endLine": 1542,
+                    "startOffset": 118129,
+                    "endLine": 1550,
                     "endColumn": 12,
-                    "endOffset": 117841
+                    "endOffset": 118252
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19298,11 +19319,11 @@
             },
             {
                 "to": {
-                    "startLine": 1543,
+                    "startLine": 1551,
                     "startColumn": 4,
-                    "startOffset": 117846,
+                    "startOffset": 118257,
                     "endColumn": 68,
-                    "endOffset": 117910
+                    "endOffset": 118321
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19317,11 +19338,11 @@
             },
             {
                 "to": {
-                    "startLine": 1544,
+                    "startLine": 1552,
                     "startColumn": 4,
-                    "startOffset": 117915,
+                    "startOffset": 118326,
                     "endColumn": 94,
-                    "endOffset": 118005
+                    "endOffset": 118416
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19336,11 +19357,11 @@
             },
             {
                 "to": {
-                    "startLine": 1545,
+                    "startLine": 1553,
                     "startColumn": 4,
-                    "startOffset": 118010,
+                    "startOffset": 118421,
                     "endColumn": 114,
-                    "endOffset": 118120
+                    "endOffset": 118531
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19355,11 +19376,11 @@
             },
             {
                 "to": {
-                    "startLine": 1546,
+                    "startLine": 1554,
                     "startColumn": 4,
-                    "startOffset": 118125,
+                    "startOffset": 118536,
                     "endColumn": 112,
-                    "endOffset": 118233
+                    "endOffset": 118644
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19374,11 +19395,11 @@
             },
             {
                 "to": {
-                    "startLine": 1547,
+                    "startLine": 1555,
                     "startColumn": 4,
-                    "startOffset": 118238,
+                    "startOffset": 118649,
                     "endColumn": 98,
-                    "endOffset": 118332
+                    "endOffset": 118743
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19393,11 +19414,11 @@
             },
             {
                 "to": {
-                    "startLine": 1548,
+                    "startLine": 1556,
                     "startColumn": 4,
-                    "startOffset": 118337,
+                    "startOffset": 118748,
                     "endColumn": 108,
-                    "endOffset": 118441
+                    "endOffset": 118852
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19412,11 +19433,11 @@
             },
             {
                 "to": {
-                    "startLine": 1549,
+                    "startLine": 1557,
                     "startColumn": 4,
-                    "startOffset": 118446,
+                    "startOffset": 118857,
                     "endColumn": 110,
-                    "endOffset": 118552
+                    "endOffset": 118963
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19431,11 +19452,11 @@
             },
             {
                 "to": {
-                    "startLine": 1550,
+                    "startLine": 1558,
                     "startColumn": 4,
-                    "startOffset": 118557,
+                    "startOffset": 118968,
                     "endColumn": 110,
-                    "endOffset": 118663
+                    "endOffset": 119074
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19450,11 +19471,11 @@
             },
             {
                 "to": {
-                    "startLine": 1551,
+                    "startLine": 1559,
                     "startColumn": 4,
-                    "startOffset": 118668,
+                    "startOffset": 119079,
                     "endColumn": 100,
-                    "endOffset": 118764
+                    "endOffset": 119175
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19469,11 +19490,11 @@
             },
             {
                 "to": {
-                    "startLine": 1552,
+                    "startLine": 1560,
                     "startColumn": 4,
-                    "startOffset": 118769,
+                    "startOffset": 119180,
                     "endColumn": 104,
-                    "endOffset": 118869
+                    "endOffset": 119280
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19488,12 +19509,12 @@
             },
             {
                 "to": {
-                    "startLine": 1553,
+                    "startLine": 1561,
                     "startColumn": 4,
-                    "startOffset": 118874,
-                    "endLine": 1554,
+                    "startOffset": 119285,
+                    "endLine": 1562,
                     "endColumn": 12,
-                    "endOffset": 118981
+                    "endOffset": 119392
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19509,12 +19530,12 @@
             },
             {
                 "to": {
-                    "startLine": 1555,
+                    "startLine": 1563,
                     "startColumn": 4,
-                    "startOffset": 118986,
-                    "endLine": 1556,
+                    "startOffset": 119397,
+                    "endLine": 1564,
                     "endColumn": 12,
-                    "endOffset": 119111
+                    "endOffset": 119522
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19530,11 +19551,11 @@
             },
             {
                 "to": {
-                    "startLine": 1557,
+                    "startLine": 1565,
                     "startColumn": 4,
-                    "startOffset": 119116,
+                    "startOffset": 119527,
                     "endColumn": 90,
-                    "endOffset": 119202
+                    "endOffset": 119613
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19549,11 +19570,11 @@
             },
             {
                 "to": {
-                    "startLine": 1558,
+                    "startLine": 1566,
                     "startColumn": 4,
-                    "startOffset": 119207,
+                    "startOffset": 119618,
                     "endColumn": 122,
-                    "endOffset": 119325
+                    "endOffset": 119736
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19568,12 +19589,12 @@
             },
             {
                 "to": {
-                    "startLine": 1559,
+                    "startLine": 1567,
                     "startColumn": 4,
-                    "startOffset": 119330,
-                    "endLine": 1560,
+                    "startOffset": 119741,
+                    "endLine": 1568,
                     "endColumn": 12,
-                    "endOffset": 119437
+                    "endOffset": 119848
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19589,11 +19610,11 @@
             },
             {
                 "to": {
-                    "startLine": 1561,
+                    "startLine": 1569,
                     "startColumn": 4,
-                    "startOffset": 119442,
+                    "startOffset": 119853,
                     "endColumn": 85,
-                    "endOffset": 119523
+                    "endOffset": 119934
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19608,11 +19629,11 @@
             },
             {
                 "to": {
-                    "startLine": 1562,
+                    "startLine": 1570,
                     "startColumn": 4,
-                    "startOffset": 119528,
+                    "startOffset": 119939,
                     "endColumn": 103,
-                    "endOffset": 119627
+                    "endOffset": 120038
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19627,12 +19648,12 @@
             },
             {
                 "to": {
-                    "startLine": 1563,
+                    "startLine": 1571,
                     "startColumn": 4,
-                    "startOffset": 119632,
-                    "endLine": 1564,
+                    "startOffset": 120043,
+                    "endLine": 1572,
                     "endColumn": 12,
-                    "endOffset": 119735
+                    "endOffset": 120146
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19648,12 +19669,12 @@
             },
             {
                 "to": {
-                    "startLine": 1565,
+                    "startLine": 1573,
                     "startColumn": 4,
-                    "startOffset": 119740,
-                    "endLine": 1566,
+                    "startOffset": 120151,
+                    "endLine": 1574,
                     "endColumn": 12,
-                    "endOffset": 119835
+                    "endOffset": 120246
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19669,12 +19690,12 @@
             },
             {
                 "to": {
-                    "startLine": 1567,
+                    "startLine": 1575,
                     "startColumn": 4,
-                    "startOffset": 119840,
-                    "endLine": 1568,
+                    "startOffset": 120251,
+                    "endLine": 1576,
                     "endColumn": 12,
-                    "endOffset": 119953
+                    "endOffset": 120364
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19690,12 +19711,12 @@
             },
             {
                 "to": {
-                    "startLine": 1569,
+                    "startLine": 1577,
                     "startColumn": 4,
-                    "startOffset": 119958,
-                    "endLine": 1570,
+                    "startOffset": 120369,
+                    "endLine": 1578,
                     "endColumn": 12,
-                    "endOffset": 120057
+                    "endOffset": 120468
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19711,12 +19732,12 @@
             },
             {
                 "to": {
-                    "startLine": 1571,
+                    "startLine": 1579,
                     "startColumn": 4,
-                    "startOffset": 120062,
-                    "endLine": 1572,
+                    "startOffset": 120473,
+                    "endLine": 1580,
                     "endColumn": 12,
-                    "endOffset": 120161
+                    "endOffset": 120572
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19732,12 +19753,12 @@
             },
             {
                 "to": {
-                    "startLine": 1573,
+                    "startLine": 1581,
                     "startColumn": 4,
-                    "startOffset": 120166,
-                    "endLine": 1574,
+                    "startOffset": 120577,
+                    "endLine": 1582,
                     "endColumn": 12,
-                    "endOffset": 120287
+                    "endOffset": 120698
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19753,11 +19774,11 @@
             },
             {
                 "to": {
-                    "startLine": 1575,
+                    "startLine": 1583,
                     "startColumn": 4,
-                    "startOffset": 120292,
+                    "startOffset": 120703,
                     "endColumn": 87,
-                    "endOffset": 120375
+                    "endOffset": 120786
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19772,11 +19793,11 @@
             },
             {
                 "to": {
-                    "startLine": 1576,
+                    "startLine": 1584,
                     "startColumn": 4,
-                    "startOffset": 120380,
+                    "startOffset": 120791,
                     "endColumn": 89,
-                    "endOffset": 120465
+                    "endOffset": 120876
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19791,11 +19812,11 @@
             },
             {
                 "to": {
-                    "startLine": 1577,
+                    "startLine": 1585,
                     "startColumn": 4,
-                    "startOffset": 120470,
+                    "startOffset": 120881,
                     "endColumn": 109,
-                    "endOffset": 120575
+                    "endOffset": 120986
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19810,11 +19831,11 @@
             },
             {
                 "to": {
-                    "startLine": 1578,
+                    "startLine": 1586,
                     "startColumn": 4,
-                    "startOffset": 120580,
+                    "startOffset": 120991,
                     "endColumn": 83,
-                    "endOffset": 120659
+                    "endOffset": 121070
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19829,11 +19850,11 @@
             },
             {
                 "to": {
-                    "startLine": 1579,
+                    "startLine": 1587,
                     "startColumn": 4,
-                    "startOffset": 120664,
+                    "startOffset": 121075,
                     "endColumn": 53,
-                    "endOffset": 120713
+                    "endOffset": 121124
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19848,11 +19869,11 @@
             },
             {
                 "to": {
-                    "startLine": 1580,
+                    "startLine": 1588,
                     "startColumn": 4,
-                    "startOffset": 120718,
+                    "startOffset": 121129,
                     "endColumn": 63,
-                    "endOffset": 120777
+                    "endOffset": 121188
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19867,11 +19888,11 @@
             },
             {
                 "to": {
-                    "startLine": 1581,
+                    "startLine": 1589,
                     "startColumn": 4,
-                    "startOffset": 120782,
+                    "startOffset": 121193,
                     "endColumn": 105,
-                    "endOffset": 120883
+                    "endOffset": 121294
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19886,11 +19907,11 @@
             },
             {
                 "to": {
-                    "startLine": 1582,
+                    "startLine": 1590,
                     "startColumn": 4,
-                    "startOffset": 120888,
+                    "startOffset": 121299,
                     "endColumn": 109,
-                    "endOffset": 120993
+                    "endOffset": 121404
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19905,11 +19926,11 @@
             },
             {
                 "to": {
-                    "startLine": 1583,
+                    "startLine": 1591,
                     "startColumn": 4,
-                    "startOffset": 120998,
+                    "startOffset": 121409,
                     "endColumn": 83,
-                    "endOffset": 121077
+                    "endOffset": 121488
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
@@ -19924,11 +19945,11 @@
             },
             {
                 "to": {
-                    "startLine": 1584,
+                    "startLine": 1592,
                     "startColumn": 4,
-                    "startOffset": 121082,
+                    "startOffset": 121493,
                     "endColumn": 119,
-                    "endOffset": 121197
+                    "endOffset": 121608
                 },
                 "from": {
                     "file": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml",
