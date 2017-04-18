@@ -1,18 +1,40 @@
 import React, { Component } from 'react'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
-import { Image, TouchableOpacity } from 'react-native'
+import { Image, TouchableOpacity, AsyncStorage } from 'react-native'
 import { Container, Content, Card, CardItem, Button, Text, Footer, FooterTab, Icon, Header, Left, Body, Title } from 'native-base'
 
 import Styles from '../assets/styles/Home.styles'
+import { fetchBids, fetchHistoryBids } from '../actions'
 
 class AuctionDetail extends Component {
   constructor () {
     super()
     this.state = {
       bidPrice: 0,
-      arrBid: []
+      nextBidData: [],
+      dataUser: {}
     }
+  }
+
+  componentDidMount () {
+    const _this = this
+    AsyncStorage.getItem('data')
+    .then((keyValue) => {
+      var data = JSON.parse(keyValue)
+      console.log(data);
+      let dataInputBid = {
+        userId: data.id,
+        token: data.token,
+        auctionId: this.props.auctionBid.id
+      }
+
+      this.setState({
+        dataUser: dataInputBid
+      })
+      _this.props.fetchHistoryBids(dataInputBid)
+    })
+    .catch(err => console.log(err))
   }
 
   componentWillMount () {
@@ -38,9 +60,13 @@ class AuctionDetail extends Component {
   }
 
   bidNow () {
-    this.setState({
-      arrBid: this.state.arrBid.concat([this.state.bidPrice])
-    })
+    let dataInputBid = {
+      userId: this.state.dataUser.userId,
+      token: this.state.dataUser.token,
+      auctionId: this.props.auctionBid.id,
+      nextBid: this.state.bidPrice
+    }
+    this.props.fetchBids(dataInputBid)
   }
 
   render () {
@@ -68,12 +94,13 @@ class AuctionDetail extends Component {
             </CardItem>
           </Card>
           {
-            this.state.arrBid.map((item, index) => {
+            this.props.bid.length > 0 ?
+            [...this.props.bid].reverse().map((item, index) => {
               return (
                 <Card key={index}>
                   <CardItem>
                     <Body>
-                      <Text>{ item }</Text>
+                      <Text>{ item.name_of_bidder } - { item.bid_nominal }</Text>
                       <Button transparent textStyle={{color: '#87838B'}}>
                         <Text>Highest Bid</Text>
                         <Text>11 hours ago</Text>
@@ -83,8 +110,10 @@ class AuctionDetail extends Component {
                 </Card>
               )
             })
+            :
+            <Text>Loading...</Text>
           }
-        </Content>
+          </Content>
         <Footer style={{height: 40}}>
           <FooterTab style={{ backgroundColor: '#E29A09' }}>
             <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.distractBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>-</Text></Button>
@@ -106,12 +135,16 @@ class AuctionDetail extends Component {
 
 const mapStateToProps = state => {
   return {
-    auctionBid: state.auction.auctionBid
+    auctionBid: state.auction.auctionBid,
+    bid: state.bid.bidsHistory
   }
 }
 
 const mapDispatchToProps = dispatch => {
-  return {}
+  return {
+    fetchBids: (dataBid) => dispatch(fetchBids(dataBid)),
+    fetchHistoryBids: (dataBid) => dispatch(fetchHistoryBids(dataBid))
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AuctionDetail)

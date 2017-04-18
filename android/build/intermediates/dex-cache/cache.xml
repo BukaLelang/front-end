@@ -3,363 +3,228 @@
 
     <item
         is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_861cf469852094f181d639cc61e97d1d92aab8ed.jar" />
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_2cffa35ce71a75815f6d4306886463afe17b77e7.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_cef2976488776ba8cfbf702062a3c6eab018329a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_1a91025e7a61282f35460749175d8832b50f1d97.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_75dd2dac67edd34222412c92cff4c3f632794a2c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_caca7d823e8802bcacece84e9d0b3f57232f645e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_e72c0a82629246e41bc12e35045ebc3529b2dbae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_edf22496b1376e16952561d6a5c2dcae23ef12e2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_8a30edb0d48b7d72ba2e2541f77b36d367c9bee6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_2c323556f8447185e367b7ff3d5d5d75dea79a32.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_8cfdd1cddaa82d9e11eaff071e9fca08b3714f2c.jar" />
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_e3089afce5053fcd98a31eb6e73140acff49302e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_a9a3f8dba5d477ce6c92f522fef4854fd844e10e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_40cbda5f83e5aef22d8fffe3c290df90bf888879.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.3_3ed95360f3bf2fa159aba113040be50ff279e5a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_91839b6558473caede578503bae5f153aa95cabf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_6042e9fa6f5e6f300e36ba1337e6f47694ce9a6e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_ea016e0fa11157216d851493fa02be6f204c7211.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_e7b3d653bca90f2646d1fd3579c6b821413c2b83.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_d49e4f376c33d0f48d068a8b45ac05f75baba7d9.jar" />
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_0c663f8d7419b7c929a44b5781bd9b0621f72472.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_32d6aa2855555cdccdb4080b72deb0d634687ef2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_a3ad6eb0783af33f6d4630cef5e7f048987579bc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1bbdb3781b520448b570f6a85b579be4df20a29a">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/BukaLelang-react-native-vector-icons-unspecified_c03a56898ae45f24acdea978db885adc19763ab7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_a31fcc95e905c57d87d35657fc525445bd6713f9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_f382163bd92516cb66c15fbb4ef1353ca762295c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_33ef7568078dcb83bcc8893c515e9d8fac1a3b3f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_44884cd7a440e6e1f35ebf1bfe9d594758856006.jar" />
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_23f06049625b34d0f6cd50e39359fd246b447720.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_300c297082e49c18ac34246bb3a0cf50af8c8f0a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_7ec93ab6e04b6963f142ade1108f219962d3e5ba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_ae652c1995a0d43dec70bd7bb63bd12a47f238c1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_3592629ee5e6021e1184ecf61c94c9f686121ca4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.3_2b85f7d8045116c41b32167788baf67b531dc20a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_93de79cf591df184b50de552d515782301a5d320.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_bd5c6786adeaa9fbeb5707a8b52ef8a09e442204.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_a83fc44ae19cb7df7c9df3f13abc8702e6c70058.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-image-picker/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="b8fe00aa9b8b3225c6b1fd324530e1bfc53e71c8">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/BukaLelang-react-native-image-picker-unspecified_2f36fea145e1cae1c61311b59ea9cda42c0253bd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_f85e01900d6725d7b06125723118916d11720f6a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-vector-icons/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1bbdb3781b520448b570f6a85b579be4df20a29a">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/BukaLelang-react-native-vector-icons-unspecified_45deb19a94abc8adde67af2c2594d883148bbcde.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_a9528295ff77518bbcee9529c88637d5ff0af8dc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_4da6b69befeb6859dada5a586e8d86d66120a18f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_723319960fa5e44d773761447a9f57e7a85078e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/endy/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_c45bbdaf41bf3fcb5ce404f1842120641c2a4462.jar" />
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_ad594f680112cb32c0524e32949d07b591b20f6e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_dc7249373e6bcfd51f4013777d021f011d1bfb40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_a465ac8d1d8203db8a3fc14ea58f0e9c4accac69.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_fce7bca8569caa6701e1cd1ed1f3458f8fcc8bb9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_7fc0f64846e1422afa95e40301aa35df7ace7ffe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.3_f641f0b2339d9c9136488af479577db425dcabb6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_45b5596f123940d7f8ea0719053b1d354df82474.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="185debb713f05e6ae262b4167d7645dce64ca4cb">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/BukaLelang-react-native-image-picker-unspecified_756a014dfa82e5793ab0a64c06a8cd5cb49e4ef3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_8ad7245b0e7778da614a1544286676336cc2ea02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_1b85eb80949edefae06d11c62984a1f2f44640f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_f2ca32085442f4f1fd5bc4f8d55c9bd72f2468f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_22c43a50825a3260352347f41a36047640503843.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_65dc5b73475cb1a2af7aef102d43922813501c58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_23b9042fbd93e9d75dc003fde63633788b20a70f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_0ec2489d050b1dd906020ae66488be2f423a784f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_4e942881c0d42232113975b6d2b9dae2a01f7f12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_a0164aab57d520bf7f3cd89dd71cbc369ee6f456.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_a823dc4ea187b130f404a31a9472a62147550b26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/BukaLelang/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b319ff9834bbeb9be394687614eb86892699ea14">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/BukaLelang-react-native-vector-icons-unspecified_bcb738c2c5a969522b9337bddf7e6e4c3df45c7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_14a4db3eef1e5586a3a82e86563e5cc400ddf0e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hacktiv8/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_b0d271d9aebf0117b26d0eebf1408214982e659b.jar" />
     </item>
 
 </items>

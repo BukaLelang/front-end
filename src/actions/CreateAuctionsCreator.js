@@ -9,7 +9,6 @@ export const sendDataToCreateAuction = data => {
 
 export const fetchDataForCreateAuction = (input, callback) => {
   return dispatch => {
-    console.log('start create auction')
     fetch('http://api.bukalelang.id/auctions', {
       method: 'POST',
       headers: {

@@ -8,6 +8,10 @@
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/catalyst_push_up_in.xml"
     },
     {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
@@ -16,16 +20,24 @@
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_out.xml"
     },
     {
-        "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/fade_out.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_out.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -40,12 +52,16 @@
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_in_top.xml"
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
@@ -66,6 +82,10 @@
     {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/fade_out.xml",
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_out.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_out_bottom.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
@@ -112,6 +132,10 @@
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_out_top.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/catalyst_push_up_in.xml"
     },
@@ -132,6 +156,18 @@
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_out_bottom.xml"
     },
     {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/fade_in.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_in.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_out_top.xml"
     },
@@ -144,12 +180,24 @@
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/fade_in.xml"
     },
     {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/slide_down.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/slide_down.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
@@ -172,6 +220,18 @@
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/slide_up.xml"
     },
     {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/slide_up.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.3/res/anim/slide_up.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_slide_in_bottom.xml"
     },
@@ -186,6 +246,10 @@
     {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/hacktiv8/Documents/handoko/front-end/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/anim/slide_down.xml",
