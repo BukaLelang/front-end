@@ -1,9 +1,7 @@
-import * as ActionTypes from '../actions/constant.js'
-// import { SendDataForLogin } from '../helpers/fetchData.js'
+import * as ActionTypes from '../actions/constants.js'
 
 // INITIAL STATE FOR REDUCER
 let init = {
-  asyncKey: true,
   dataUser: {
     bukalapakId: null,
     email: null,
@@ -19,9 +17,6 @@ let init = {
 
 const loginReducers = (state = init, action) => {
   switch (action.type) {
-    case ActionTypes.GET_DATA: {
-      return state
-    }
     case ActionTypes.SEND_DATA_TO_LOGIN: {
       // console.log('isi reducer ' + JSON.stringify(action.payload))
       return Object.assign({}, state, {dataUser: action.payload})

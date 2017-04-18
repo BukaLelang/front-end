@@ -6,5 +6,9 @@
     {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/home/endy/darwins-fox-2017/front-end/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

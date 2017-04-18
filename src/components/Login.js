@@ -1,69 +1,60 @@
 import React, { Component } from 'react'
-import { Image, AsyncStorage, Alert } from 'react-native'
+import { AsyncStorage, Alert } from 'react-native'
 import { Container, Content, Form, Input, Button, Text, InputGroup, H1, Footer, FooterTab } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 
+import { fetchDataForLogin } from '../actions'
 import Styles from '../assets/styles/Login.styles'
-import * as ActionTypes from '../actions/constant.js'
-import { SendDataForLogin } from '../helpers/fetchData.js'
 
 class Login extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      login: {
-        username: '',
-        password: ''
-      },
-      anmating: true
+      username: '',
+      password: ''
     }
   }
 
   componentDidMount () {
-    this._checkAsync()
-  }
-
-  _checkAsync () {
     AsyncStorage.getItem('data').then((keyValue) => {
       var data = JSON.parse(keyValue)
-      if (data.dataUser.token) {
-        Actions.MenuDrawer()
-      }
+      data !== null ? (
+        console.log('AsyncStorage sudah terisi'),
+        Actions.Home()
+      ) : (
+        console.log('AsyncStorage masih kosong')
+      )
     }, (error) => {
       console.log(error)
     })
   }
 
   _onChangeInputUsername (event) {
-    this.setState({
-      login: {
-        username: event.nativeEvent.text,
-        password: this.state.login.password
-      }
-    })
+    this.setState({ username: event.nativeEvent.text })
   }
 
   _onChangeInputPassword (event) {
-    this.setState({
-      login: {
-        username: this.state.login.username,
-        password: event.nativeEvent.text
-      }
-    })
+    this.setState({ password: event.nativeEvent.text })
   }
 
   _sendData () {
-    let callback = (resultDataAfterFetch) => {
-      if (resultDataAfterFetch.token) {
-        this.props.sendDataToLogin(resultDataAfterFetch)
-        AsyncStorage.setItem('data', JSON.stringify(this.props.login))
-        Actions.Home()
-      } else {
-        Alert.alert('Username atau password anda salah')
-      }
+    let input = {
+      username: this.state.username,
+      password: this.state.password
     }
-    SendDataForLogin(this.state.login, callback)
+
+    let callback = (dataResultAfterFetch) => {
+      dataResultAfterFetch.success === true ? (
+        console.log('proses login berhasil'),
+        AsyncStorage.setItem('data', JSON.stringify(dataResultAfterFetch)),
+        Actions.Home()
+      ) : (
+        Alert.alert(dataResultAfterFetch.message)
+      )
+    }
+
+    this.props.fetchDataForLogin(input, callback)
   }
 
   render () {
@@ -82,14 +73,6 @@ class Login extends Component {
               <Text>Login</Text>
             </Button>
             <Text style={Styles.OrStyle}>OR</Text>
-            <Button block style={Styles.FacebookButton}>
-              <Image source={require('../assets/images/fb-logo.png')} style={Styles.IconImage} />
-              <Text style={Styles.TextButton}>Login dengan Facebook</Text>
-            </Button>
-            <Button block style={Styles.GoogleButton}>
-              <Image source={require('../assets/images/google-logo.png')} style={Styles.IconImage} />
-              <Text style={Styles.TextButton}>Login dengan Google</Text>
-            </Button>
           </Form>
         </Content>
         <Footer>
@@ -112,10 +95,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    sendDataToLogin: (data) => dispatch({
-      type: ActionTypes.SEND_DATA_TO_LOGIN,
-      payload: data
-    })
+    fetchDataForLogin: (input, callback) => dispatch(fetchDataForLogin(input, callback))
   }
 }
 

@@ -18,6 +18,10 @@ export default class SideMenu extends Component {
     })
   }
 
+  _create () {
+    Actions.CreateAuction()
+  }
+
   render () {
     return (
       <Container>
@@ -36,6 +40,9 @@ export default class SideMenu extends Component {
             <ListItem>
               <Text style={Styles.TextMenu}>Menang Lelang</Text>
             </ListItem>
+            <Button block style={Styles.LogoutButton} onPress={() => { this._logout() }}>
+              <Text style={Styles.LogoutText}>Bikin Lelang</Text>
+            </Button>
             <Button block style={Styles.LogoutButton} onPress={() => { this._logout() }}>
               <Text style={Styles.LogoutText}>Logout</Text>
             </Button>

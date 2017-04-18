@@ -19,8 +19,28 @@ export const SendDataForLogin = (input, callback) => {
 }
 
 // SEND DATA TO REGISTER
-export const SendDataForRegister = (input, callback) => {
-  fetch('http://api.bukalelang.id/auth/register', {
+// export const SendDataForRegister = (input, callback) => {
+//   fetch('http://api.bukalelang.id/auth/register', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(input)
+//   })
+//   .then(result => {
+//     return result.json()
+//   })
+//   .then(fetchResult => {
+//     callback(fetchResult)
+//   })
+//   .catch(err => {
+//     console.log(err)
+//   })
+// }
+
+// SEND DATA FOR CREATE AUCTION
+export const SendDataForCreateAuction = (input, callback) => {
+  fetch('http://api.bukalelang.id/auctions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -31,7 +51,7 @@ export const SendDataForRegister = (input, callback) => {
     return result.json()
   })
   .then(fetchResult => {
-    callback(fetchResult)
+    console.log(fetchResult)
   })
   .catch(err => {
     console.log(err)
