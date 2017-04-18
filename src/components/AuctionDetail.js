@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import SocketIOClient from 'socket.io-client'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 import { Image, TouchableOpacity, AsyncStorage } from 'react-native'
@@ -15,29 +16,32 @@ class AuctionDetail extends Component {
       nextBidData: [],
       dataUser: {}
     }
+
+    this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
   }
 
-  componentDidMount () {
+  componentWillMount () {
     const _this = this
     AsyncStorage.getItem('data')
     .then((keyValue) => {
       var data = JSON.parse(keyValue)
-      console.log(data);
-      let dataInputBid = {
-        userId: data.id,
-        token: data.token,
-        auctionId: this.props.auctionBid.id
-      }
+      if (data === null) {
+        Actions.Login()
+      } else {
+        let dataInputBid = {
+          userId: data.id,
+          token: data.token,
+          auctionId: this.props.auctionBid.id
+        }
 
-      this.setState({
-        dataUser: dataInputBid
-      })
-      _this.props.fetchHistoryBids(dataInputBid)
+        this.setState({
+          dataUser: dataInputBid
+        })
+        _this.props.fetchHistoryBids(dataInputBid)
+      }
     })
     .catch(err => console.log(err))
-  }
 
-  componentWillMount () {
     this.setState({
       bidPrice: this.props.auctionBid.current_price
     })
