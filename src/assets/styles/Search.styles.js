@@ -12,13 +12,13 @@ export default {
     color: '#a30f42'
   },
   Header: {
-    backgroundColor:'#a30f42',
+    backgroundColor: '#a30f42',
     flexDirection: 'row'
   },
   BackButton: {
     width: '100%',
     justifyContent: 'center',
-    backgroundColor:'#780116'
+    backgroundColor: '#780116'
   },
   Content: {
     padding: 5

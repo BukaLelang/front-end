@@ -1,35 +1,75 @@
 import React, { Component } from 'react'
-import { Image } from 'react-native'
-import { Container, Card, CardItem, Content, Button, Text } from 'native-base'
+import { connect } from 'react-redux'
+import { Actions } from 'react-native-router-flux'
+import { Image, View } from 'react-native'
+import { Container, Card, CardItem, Content, Button, Text, Spinner } from 'native-base'
 
 import Styles from '../assets/styles/Home.styles'
 import HeaderNav from './HeaderNav'
 import FooterNav from './FooterNav'
+import Currency from '../helpers/currency'
+import { fetchAuctions, loadAuctionById } from '../actions'
 
 class Home extends Component {
+  routeToAuctionsDetail (id) {
+    this.props.fetchAuctionById(id)
+    Actions.AuctionDetail()
+  }
+
   render () {
     return (
       <Container>
         <HeaderNav />
-          <Content>
-            <Card >
-              <CardItem cardBody>
-                <Image source={{ uri: 'http://4.bp.blogspot.com/-IgOZa3Gm5Qc/VecNGI-7NJI/AAAAAAAAAk0/0bg1FVdAfes/s1600/Foto-Isyana-Sarasvati-01.jpg' }} style={{width: '100%', height: 250 }} />
-              </CardItem>
-              <CardItem content>
-                <Text>Wait a minute. Wait a minute, Doc. Uhhh...
-                Are you telling me that you built a time machine... out of a DeLorean?!
-                Whoa. This is heavy.</Text>
-              </CardItem>
-              <Button block style={Styles.ParticipateButton}>
-                <Text> Ikut Lelang </Text>
-              </Button>
-            </Card>
-          </Content>
+        <Content>
+          {
+              this.props.auctionStatus ?
+                this.props.auctions.map((item, index) => {
+                  return (
+                    <Card key={index}>
+                      <CardItem cardBody>
+                        <Image source={{ uri: item.images }} style={Styles.ImageAuction}>
+                          <View style={Styles.Badge}><Text style={Styles.BadgeTitle}>NEW</Text></View>
+                        </Image>
+                      </CardItem>
+                      <View content style={Styles.AuctionBox}>
+                        <Text style={Styles.Title}>{item.title}</Text>
+                      </View>
+                      <View style={Styles.DescriptionBox}>
+                        <Text style={Styles.DescriptionTitle}>Deskripsi</Text>
+                        <Text style={Styles.DescriptionContent}>{item.description}</Text>
+                      </View>
+                      <View style={Styles.AuctionBox}>
+                        <Text style={Styles.CurrentPrice}>Current Price: </Text>
+                        <Text style={Styles.Currency}>Rp.{Currency(item.current_price)}</Text>
+                      </View>
+                      <Button block style={Styles.ParticipateButton} onPress={() => this.routeToAuctionsDetail(item.id)} >
+                        <Text> Ikut Lelang </Text>
+                      </Button>
+                    </Card>
+                  )
+                })
+               :
+                    <Spinner color='#68A57B' />
+            }
+        </Content>
         <FooterNav />
       </Container>
     )
   }
 }
 
-export default Home
+const mapStateToProps = state => {
+  return {
+    auctions: state.auction.listAuctions.auctions,
+    auctionStatus: state.auction.listAuctions.status
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchAuctions: dispatch(fetchAuctions()),
+    fetchAuctionById: id => dispatch(loadAuctionById(id))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)

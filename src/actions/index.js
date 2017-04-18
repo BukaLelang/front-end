@@ -1,11 +1,16 @@
-import { fetchDataForRegister } from './RegisterActionsCreator.js'
+import { fetchDataForRegister } from './RegisterActionsCreator'
 
-import { fetchDataForLogin } from './LoginActionsCreator.js'
+import { fetchDataForLogin } from './LoginActionsCreator'
 
-import { fetchDataForCreateAuction } from './CreateAuctionsCreator.js'
+import { fetchDataForCreateAuction } from './CreateAuctionsCreator'
+
+import { loadAuctions, fetchAuctions, loadAuctionById } from './AuctionsActionCreator'
 
 export {
   fetchDataForRegister,
   fetchDataForLogin,
-  fetchDataForCreateAuction
+  fetchDataForCreateAuction,
+  loadAuctions,
+  fetchAuctions,
+  loadAuctionById
 }
