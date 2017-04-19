@@ -1,5 +1,4 @@
 import axios from 'axios'
-
 import * as ActionTypes from './constants'
 
 export const loadBids = data => {
@@ -18,7 +17,8 @@ export const loadHistoryBids = data => {
 
 export const fetchBids = dataBid => {
   return dispatch => {
-    axios.post('http://api.bukalelang.id/bids', dataBid)
+    console.log('ini databid', dataBid);
+    axios.post('http://api.bukalelang.id/bids', { auctionId: dataBid.auctionId, nextBid: dataBid.nextBid }, {headers: { userid: dataBid.userId, token: dataBid.token}})
       .then(response => dispatch(loadBids(response.data)))
       .catch(error => console.log('error'))
 

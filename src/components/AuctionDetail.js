@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
-import SocketIOClient from 'socket.io-client'
+import moment from 'moment'
+// window.navigator.userAgent = "react-native";
+// import SocketIOClient from 'socket.io-client'
+
+
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
-import { Image, TouchableOpacity, AsyncStorage } from 'react-native'
-import { Container, Content, Card, CardItem, Button, Text, Footer, FooterTab, Icon, Header, Left, Body, Title } from 'native-base'
+import { Image, TouchableOpacity, AsyncStorage, View, Alert } from 'react-native'
+import { Container, Content, Card, CardItem, Button, Text, Footer, FooterTab, Icon, Header, Left, Body, Title, Spinner } from 'native-base'
 
 import Styles from '../assets/styles/Home.styles'
 import { fetchBids, fetchHistoryBids } from '../actions'
+import Currency from '../helpers/currency'
 
 class AuctionDetail extends Component {
   constructor () {
@@ -17,7 +22,7 @@ class AuctionDetail extends Component {
       dataUser: {}
     }
 
-    this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
+    // this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
   }
 
   componentWillMount () {
@@ -33,7 +38,6 @@ class AuctionDetail extends Component {
           token: data.token,
           auctionId: this.props.auctionBid.id
         }
-
         this.setState({
           dataUser: dataInputBid
         })
@@ -47,20 +51,36 @@ class AuctionDetail extends Component {
     })
   }
 
+  componentDidMount () {
+    // this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
+    //   this.setState({
+    //     bidPrice: newBidfromOther.current_price
+    //   })
+    // })
+  }
+
   addBidPrice () {
     let n = this.state.bidPrice
     n += this.props.auctionBid.kelipatan_bid
-    this.setState({
-      bidPrice: n
-    })
+
+    if (n > this.props.auctionBid.max_price)
+    Alert.alert('Warning', 'Harga Sudah Max. Bid sekarang! Anda akan memenangkan lelang.', [{text: 'OK'}])
+    else
+      this.setState({
+        bidPrice: n
+      })
   }
 
   distractBidPrice () {
     let n = this.state.bidPrice
     n -= this.props.auctionBid.kelipatan_bid
-    this.setState({
-      bidPrice: n
-    })
+
+    if (n <= this.props.auctionBid.current_price)
+      Alert.alert('Warning', 'Harga tidak boleh lebih rendah dari harga sekarang', [{text: 'OK'}])
+    else
+      this.setState({
+        bidPrice: n
+      })
   }
 
   bidNow () {
@@ -103,11 +123,13 @@ class AuctionDetail extends Component {
               return (
                 <Card key={index}>
                   <CardItem>
-                    <Body>
-                      <Text>{ item.name_of_bidder } - { item.bid_nominal }</Text>
+                    <Body style={{ justifyContent: 'center'}}>
+                      <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Rp.{ item.bid_nominal }</Text>
                       <Button transparent textStyle={{color: '#87838B'}}>
-                        <Text>Highest Bid</Text>
-                        <Text>11 hours ago</Text>
+                        <View>
+                          <Text style={{ color: '#bcbcbc' }}>Bidder : { item.name_of_bidder }</Text>
+                        </View>
+                        <Text style={{ color: '#bcbcbc' }}>{ moment(item.bidding_time).startOf('hours').fromNow()}</Text>
                       </Button>
                     </Body>
                   </CardItem>
@@ -115,7 +137,20 @@ class AuctionDetail extends Component {
               )
             })
             :
-            <Text>Loading...</Text>
+            <Card>
+              <Spinner color='#68A57B' />
+              <CardItem>
+                <Body style={{ justifyContent: 'center'}}>
+                  <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Next Bid: Rp.{ this.props.auctionBid.current_price + this.props.auctionBid.kelipatan_bid}</Text>
+                  <Button transparent textStyle={{color: '#87838B'}}>
+                    <View>
+                      <Text style={{ color: '#bcbcbc' }}>Highest Bid : Rp.{this.props.auctionBid.current_price}</Text>
+                    </View>
+                    <Text style={{ color: '#bcbcbc' }}>{ moment().startOf('hours').fromNow()}</Text>
+                  </Button>
+                </Body>
+              </CardItem>
+            </Card>
           }
           </Content>
         <Footer style={{height: 40}}>

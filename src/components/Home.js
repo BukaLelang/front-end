@@ -6,7 +6,6 @@ import { Container, Card, CardItem, Content, Button, Text, Spinner } from 'nativ
 
 import Styles from '../assets/styles/Home.styles'
 import HeaderNav from './HeaderNav'
-import FooterNav from './FooterNav'
 import Currency from '../helpers/currency'
 import { fetchAuctions, loadAuctionById } from '../actions'
 
@@ -28,7 +27,7 @@ class Home extends Component {
                     <Card key={index}>
                       <CardItem cardBody>
                         <Image source={{ uri: item.images }} style={Styles.ImageAuction}>
-                          <View style={Styles.Badge}><Text style={Styles.BadgeTitle}>NEW</Text></View>
+                          <View style={Styles.Badge}><Text style={Styles.BadgeTitle}>{ item.new ? 'BARU' : 'BEKAS' }</Text></View>
                         </Image>
                       </CardItem>
                       <View content style={Styles.AuctionBox}>
@@ -49,10 +48,9 @@ class Home extends Component {
                   )
                 })
                :
-                    <Spinner color='#68A57B' />
+                <Spinner color='#68A57B' />
             }
         </Content>
-        <FooterNav />
       </Container>
     )
   }

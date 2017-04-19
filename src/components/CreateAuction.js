@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import { Actions } from 'react-native-router-flux'
-import { AsyncStorage } from 'react-native'
+import { AsyncStorage, StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native'
 import { Container, Content, InputGroup, Input, Text, Form, Button } from 'native-base'
 import { connect } from 'react-redux'
 import ImagePicker from 'react-native-image-picker'
 import { btoa } from 'Base64'
+import DatePicker from 'react-native-datepicker'
+import ModalDropdown from 'react-native-modal-dropdown'
 
 import { fetchDataForCreateAuction } from '../actions'
 import HeaderNav from './HeaderNav'
+import categoryId from '../helpers/categoryId'
 
 // options configuration for image picker
 let options = {
@@ -17,6 +20,9 @@ let options = {
     path: '../images'
   }
 }
+
+const itemCondition = ['Baru', 'Bekas']
+const rangeBid = ['1000', '2000', '5000', '10000', '20000', '50000', '100000']
 
 class CreateAuction extends Component {
   constructor (props) {
@@ -44,7 +50,11 @@ class CreateAuction extends Component {
       end_date: null,
     // for image state
       imagesId: null,
-      imagesIdFromBl: null
+      imagesIdFromBl: null,
+    // for categoryId
+      category: categoryId,
+      categoryAfterFilter: [],
+      placeholderForCategoryName: 'pilih kategory'
     }
   }
 
@@ -74,11 +84,16 @@ class CreateAuction extends Component {
   }
 
   _onChangeCategoryId (event) {
-    this.setState({ categoryId: event.nativeEvent.text })
+    this.setState({
+      categoryId: event.bl_categoryId,
+      categoryAfterFilter: [],
+      placeholderForCategoryName: event.name
+    })
   }
 
   _onChangeNew (event) {
-    this.setState({ new: event.nativeEvent.text })
+    // 0 = baru, 1 = bekas
+    event === 0 ? (this.setState({ new: true })) : (this.setState({ new: false }))
   }
 
   _onChangeWeight (event) {
@@ -97,12 +112,8 @@ class CreateAuction extends Component {
     this.setState({ max_price: event.nativeEvent.text })
   }
 
-  _onChangeKelipatanBid (event) {
-    this.setState({ kelipatan_bid: event.nativeEvent.text })
-  }
-
-  _onChangeEndDate (event) {
-    this.setState({ end_date: event.nativeEvent.text })
+  _onChangeKelipatanBid (idx, value) {
+    this.setState({ kelipatan_bid: Number(value) })
   }
 
   _uploadPicture () {
@@ -167,51 +178,111 @@ class CreateAuction extends Component {
       imagesId: this.state.imagesIdFromBl,
       end_date: this.state.end_date
     }
+    this.props.fetchDataForCreateAuction(input)
+    Actions.Home()
+  }
 
-    let callback = (dataResultAfterFetch) => {
-      console.log(dataResultAfterFetch)
+  _filterSearchCategory (event) {
+    let checkCategory = (data) => {
+      var pattern = new RegExp(event.nativeEvent.text, 'gi')
+      if (pattern.test(data.name)) {
+        return true
+      }
     }
 
-    this.props.fetchDataForCreateAuction(input, callback)
+    event.nativeEvent.text.length !== 0 ? (
+      this.setState({categoryAfterFilter: this.state.category.filter(checkCategory)})
+    ) : (
+      this.setState({categoryAfterFilter: []})
+    )
   }
 
   render () {
     return (
       <Container>
-        <Text>{JSON.stringify(this.state)}</Text>
+        <Text>{JSON.stringify(this.state.categoryId)}</Text>
         <HeaderNav />
         <Content>
           <Form>
+            {/* TITLE */}
             <InputGroup regular>
               <Input placeholder='Title' onChange={(event) => { this._onChangeTitle(event) }} />
             </InputGroup>
+
+            {/* KATEGORI ID */}
             <InputGroup regular>
-              <Input placeholder='Kategori id' onChange={(event) => { this._onChangeCategoryId(event) }} />
+              <Input placeholder={this.state.placeholderForCategoryName} onChange={(event) => { this._filterSearchCategory(event) }} />
             </InputGroup>
+
+            <ScrollView>
+              { this.state.categoryAfterFilter.map((newsItem, index) => {
+                return (
+                  <TouchableOpacity key={index} onPress={() => { this._onChangeCategoryId(newsItem) }} >
+                    <Text> {newsItem.name} </Text>
+                  </TouchableOpacity>
+                )
+              })}
+            </ScrollView>
+
+            {/* KONDISI BARANG */}
+            <Text>Kondisi barang: </Text>
+            <View style={styles.container}>
+              <View style={styles.row}>
+                <View style={styles.cell}>
+                  <ModalDropdown style={styles.dropdown} options={itemCondition} onSelect={(value) => this._onChangeNew(value)} />
+                </View>
+              </View>
+            </View>
+
+            {/* KELIPATAN BID */}
+            <Text>Kelipatan Bid: </Text>
+            <View style={styles.container}>
+              <View style={styles.row}>
+                <View style={styles.cell}>
+                  <ModalDropdown style={styles.dropdown} options={rangeBid} onSelect={(idx, value) => this._onChangeKelipatanBid(idx, value)} />
+                </View>
+              </View>
+            </View>
+
+            {/* PERKIRAAN BERAT */}
             <InputGroup regular>
-              <Input placeholder='New' onChange={(event) => { this._onChangeNew(event) }} />
+              <Input placeholder='Perkiraan berat' keyboardType={'numeric'} onChange={(event) => { this._onChangeWeight(event) }} />
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Weight (kg)' onChange={(event) => { this._onChangeWeight(event) }} />
-            </InputGroup>
+
+            {/* DESKRIPSI BARANG */}
             <InputGroup regular>
               <Input placeholder='Description' onChange={(event) => { this._onChangeDescription(event) }} />
             </InputGroup>
+
+            {/* MIN PRICE */}
             <InputGroup regular>
-              <Input placeholder='Min. Price' onChange={(event) => { this._onChangeMinPrice(event) }} />
+              <Input placeholder='Min. Price' keyboardType={'numeric'} onChange={(event) => { this._onChangeMinPrice(event) }} />
             </InputGroup>
+
+            {/* MAX PRICE */}
             <InputGroup regular>
-              <Input placeholder='Max. Price' onChange={(event) => { this._onChangeMaxPrice(event) }} />
+              <Input placeholder='Max. Price' keyboardType={'numeric'} onChange={(event) => { this._onChangeMaxPrice(event) }} />
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Kelipatan Bidding' onChange={(event) => { this._onChangeKelipatanBid(event) }} />
-            </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='end date' onChange={(event) => { this._onChangeEndDate(event) }} />
-            </InputGroup>
+
+            {/* DATE END BID */}
+            <DatePicker
+              style={{width: 200}}
+              date={this.state.end_date}
+              mode='datetime'
+              format='YYYY-MM-DD HH:mm'
+              confirmBtnText='Confirm'
+              cancelBtnText='Cancel'
+              customStyles={{ dateIcon: { position: 'absolute', left: 0, top: 4, marginLeft: 0 }, dateInput: { marginLeft: 36 } }}
+              minuteInterval={10}
+              onDateChange={(datetime) => { this.setState({end_date: datetime}) }}
+            />
+
+            {/* PILIH GAMBAR */}
             <Button onPress={() => { this._uploadPicture() }}>
               <Text>Pilih Gambar</Text>
             </Button>
+
+            {/* SUBMIT */}
             <Button block onPress={() => { this._sendData() }} >
               <Text>Submit</Text>
             </Button>
@@ -230,8 +301,27 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchDataForCreateAuction: (input, callback) => { fetchDataForCreateAuction(input, callback) }
+    fetchDataForCreateAuction: (input) => { dispatch(fetchDataForCreateAuction(input)) }
   }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CreateAuction)
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  row: {
+    flex: 1,
+    flexDirection: 'row',
+    height: 20
+  },
+  cell: {
+    flex: 1,
+    borderWidth: StyleSheet.hairlineWidth
+  },
+  dropdown: {
+    flex: 1,
+    left: 8
+  }
+})
