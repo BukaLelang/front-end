@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import moment from 'moment'
-// window.navigator.userAgent = 'react-native'
-// import SocketIOClient from 'socket.io-client'
+import SocketIOClient from 'socket.io-client'
 
 
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 import { Image, TouchableOpacity, AsyncStorage, View, Alert } from 'react-native'
-import { Container, Content, Card, CardItem, Button, Text, Footer, FooterTab, Icon, Header, Left, Body, Title, Spinner } from 'native-base'
+import { Container, Content, Card, CardItem, Button, Footer, FooterTab, Icon, Header, Left, Body, Title, Spinner, Text } from 'native-base'
 
 import Styles from '../assets/styles/Home.styles'
-import { fetchBids, fetchHistoryBids } from '../actions'
+import { fetchBids, fetchHistoryBids, appendNewBid } from '../actions'
 import Currency from '../helpers/currency'
 
 class AuctionDetail extends Component {
@@ -18,11 +17,11 @@ class AuctionDetail extends Component {
     super()
     this.state = {
       bidPrice: 0,
-      nextBidData: [],
+      nextBidData: {},
       dataUser: {}
     }
 
-    // this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
+    this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
   }
 
   componentWillMount () {
@@ -52,12 +51,13 @@ class AuctionDetail extends Component {
   }
 
   componentDidMount () {
-    // this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
-    //   this.setState({
-    //     bidPrice: newBidfromOther.current_price,
-    //     nextBidData: newBidfromOther
-    //   })
-    // })
+    this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
+      this.setState({
+        bidPrice: newBidfromOther.current_price,
+        nextBidData: newBidfromOther
+      })
+      this.props.appendNewBid(newBidfromOther);
+    })
   }
 
   addBidPrice () {
@@ -91,8 +91,8 @@ class AuctionDetail extends Component {
       auctionId: this.props.auctionBid.id,
       nextBid: this.state.bidPrice + this.props.auctionBid.kelipatan_bid
     }
+    // add new bid to DB
     this.props.fetchBids(dataInputBid)
-    // this.props.fetchHistoryBids(this.state.nextBidData)
   }
 
   render () {
@@ -121,13 +121,24 @@ class AuctionDetail extends Component {
           </Card>
           {
             this.props.bid.length > 0 ?
-            [...this.props.bid].sort( function(a,b) { return b-a }).map((item, index) => {
+            [...this.props.bid].sort().map((item, index) => {
               return (
                 <Card key={index}>
                   <CardItem>
                     <Body style={{ justifyContent: 'center'}}>
-                      <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Rp.{ item.bid_nominal }</Text>
-                      <Button transparent textStyle={{color: '#87838B'}}>
+                      <Text
+                        style={{
+                          color: '#C33149',
+                          fontWeight: 'bold',
+                          fontSize: 23,
+                          height: 25,
+                          width: '100%',
+                          textAlign: 'center',
+                        }}
+                      >
+                        Rp.{ String(item.bid_nominal) }
+                      </Text>
+                      <Button transparent style={{ justifyContent: 'space-between' }}>
                         <View>
                           <Text style={{ color: '#bcbcbc' }}>Bidder : { item.name_of_bidder }</Text>
                         </View>
@@ -143,12 +154,12 @@ class AuctionDetail extends Component {
               <CardItem>
                 <Body style={{ justifyContent: 'center'}}>
                   <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Next Bid: Rp.{ this.props.auctionBid.current_price + this.props.auctionBid.kelipatan_bid}</Text>
-                  <Button transparent textStyle={{color: '#87838B'}}>
+                  <Button transparent style={{ justifyContent: 'space-between' }}>
                     <View>
                       <Text style={{ color: '#bcbcbc' }}>Highest Bid : Rp.{this.props.auctionBid.current_price}</Text>
                     </View>
                     <Text style={{ color: '#bcbcbc' }}>{ moment().startOf('hours').fromNow()}</Text>
-                  </Button>
+                  </Button>  
                 </Body>
               </CardItem>
             </Card>
@@ -183,7 +194,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchBids: (dataBid) => dispatch(fetchBids(dataBid)),
-    fetchHistoryBids: (dataBid) => dispatch(fetchHistoryBids(dataBid))
+    fetchHistoryBids: (dataBid) => dispatch(fetchHistoryBids(dataBid)),
+    appendNewBid: (newBid) => dispatch(appendNewBid(newBid))
   }
 }
 

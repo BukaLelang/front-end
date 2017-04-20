@@ -22,10 +22,10 @@ export const fetchBids = dataBid => {
       .then(response => dispatch(loadBids(response.data)))
       .catch(error => console.log('error'))
 
-    let input = { userId: dataBid.userId, token: dataBid.token }
-    axios.get('http://api.bukalelang.id/auctions/' + dataBid.auctionId + '/bid-history', {headers: input})
-      .then(response => dispatch(loadHistoryBids(response.data)))
-      .catch(error => console.log(error))
+    // let input = { userId: dataBid.userId, token: dataBid.token }
+    // axios.get('http://api.bukalelang.id/auctions/' + dataBid.auctionId + '/bid-history', {headers: input})
+    //   .then(response => dispatch(loadHistoryBids(response.data)))
+    //   .catch(error => console.log(error))
   }
 }
 
@@ -36,5 +36,13 @@ export const fetchHistoryBids = dataBid => {
     axios.get('http://api.bukalelang.id/auctions/' + dataBid.auctionId + '/bid-history', {headers: input})
       .then(response => dispatch(loadHistoryBids(response.data)))
       .catch(error => console.log(error))
+  }
+}
+
+// APPEND NEW BID FROM WEBSOCKET
+export const appendNewBid = newBid => {
+  return {
+    type: ActionTypes.APPEND_NEW_BID,
+    payload: newBid
   }
 }

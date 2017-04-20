@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AsyncStorage, Alert } from 'react-native'
+import { AsyncStorage, Alert, Image } from 'react-native'
 import { Container, Content, Form, Input, Button, Text, InputGroup, H1, Footer, FooterTab } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
@@ -53,7 +53,6 @@ class Login extends Component {
         Alert.alert(dataResultAfterFetch.message)
       )
     }
-
     this.props.fetchDataForLogin(input, callback)
   }
 
@@ -61,8 +60,8 @@ class Login extends Component {
     return (
       <Container>
         <Content style={Styles.Container}>
+          <Image source={require('../assets/images/bukalelang-banner-versi-reverse.png')} style={{ width: 250, height: 200, resizeMode: 'contain', marginLeft: 15 }} />
           <Form>
-            <H1 style={Styles.Logo}>BukaLelang</H1>
             <InputGroup regular>
               <Input placeholder='Username' onChange={(event) => { this._onChangeInputUsername(event) }} />
             </InputGroup>

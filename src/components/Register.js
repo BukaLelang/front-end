@@ -59,8 +59,8 @@ class Register extends Component {
     return (
       <Container>
         <Content style={Styles.Container}>
+          <Image source={require('../assets/images/bukalelang-banner-versi-reverse.png')} style={{ width: 250, height: 200, resizeMode: 'contain', marginLeft: 15 }} />
           <Form>
-            <H1 style={Styles.Logo}>BukaLelang</H1>
             <InputGroup regular>
               <Input placeholder='Nama Lengkap' onChange={(event) => { this._onChangeInputName(event) }} />
             </InputGroup>

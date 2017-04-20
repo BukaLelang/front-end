@@ -13,5 +13,6 @@ export const LOAD_AUCTION_BY_ID = 'LOAD_AUCTION_BY_ID'
 
 // FOR BIDS LIST
 export const LOAD_BIDS = 'LOAD_BIDS'
+export const APPEND_NEW_BID = 'APPEND_NEW_BID'
 
 export const LOAD_HISTORY_BIDS = 'LOAD_HISTORY_BIDS'
