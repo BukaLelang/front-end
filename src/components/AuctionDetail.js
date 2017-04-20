@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
-// window.navigator.userAgent = "react-native";
+// window.navigator.userAgent = 'react-native'
 // import SocketIOClient from 'socket.io-client'
 
 
@@ -54,7 +54,8 @@ class AuctionDetail extends Component {
   componentDidMount () {
     // this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
     //   this.setState({
-    //     bidPrice: newBidfromOther.current_price
+    //     bidPrice: newBidfromOther.current_price,
+    //     nextBidData: newBidfromOther
     //   })
     // })
   }
@@ -88,9 +89,10 @@ class AuctionDetail extends Component {
       userId: this.state.dataUser.userId,
       token: this.state.dataUser.token,
       auctionId: this.props.auctionBid.id,
-      nextBid: this.state.bidPrice
+      nextBid: this.state.bidPrice + this.props.auctionBid.kelipatan_bid
     }
     this.props.fetchBids(dataInputBid)
+    // this.props.fetchHistoryBids(this.state.nextBidData)
   }
 
   render () {
@@ -119,7 +121,7 @@ class AuctionDetail extends Component {
           </Card>
           {
             this.props.bid.length > 0 ?
-            [...this.props.bid].reverse().map((item, index) => {
+            [...this.props.bid].sort( function(a,b) { return b-a }).map((item, index) => {
               return (
                 <Card key={index}>
                   <CardItem>
@@ -138,7 +140,6 @@ class AuctionDetail extends Component {
             })
             :
             <Card>
-              <Spinner color='#68A57B' />
               <CardItem>
                 <Body style={{ justifyContent: 'center'}}>
                   <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Next Bid: Rp.{ this.props.auctionBid.current_price + this.props.auctionBid.kelipatan_bid}</Text>
@@ -156,7 +157,7 @@ class AuctionDetail extends Component {
         <Footer style={{height: 40}}>
           <FooterTab style={{ backgroundColor: '#E29A09' }}>
             <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.distractBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>-</Text></Button>
-            <Text style={{ color: '#932437', fontWeight: 'bold', fontSize: 22, width: '55%', textAlign: 'center', paddingTop: 4, alignItems: 'center' }}>{ this.state.bidPrice }</Text>
+            <Text style={{ color: '#932437', fontWeight: 'bold', fontSize: 22, width: '55%', textAlign: 'center', paddingTop: 4, alignItems: 'center' }}>{ this.state.bidPrice + this.props.auctionBid.kelipatan_bid }</Text>
             <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.addBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>+</Text></Button>
           </FooterTab>
         </Footer>

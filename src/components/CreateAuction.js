@@ -9,6 +9,7 @@ import DatePicker from 'react-native-datepicker'
 import ModalDropdown from 'react-native-modal-dropdown'
 
 import { fetchDataForCreateAuction } from '../actions'
+import Styles from '../assets/styles/CreateAuction.styles'
 import HeaderNav from './HeaderNav'
 import categoryId from '../helpers/categoryId'
 
@@ -54,7 +55,7 @@ class CreateAuction extends Component {
     // for categoryId
       category: categoryId,
       categoryAfterFilter: [],
-      placeholderForCategoryName: 'pilih kategory'
+      placeholderForCategoryName: 'Pilih Kategori'
     }
   }
 
@@ -145,7 +146,6 @@ class CreateAuction extends Component {
           body: data
         }
 
-        console.log('start fetch process')
         const self = this
         fetch(blEndPoint, config)
         .then(function (response) {
@@ -200,10 +200,14 @@ class CreateAuction extends Component {
   render () {
     return (
       <Container>
-        <Text>{JSON.stringify(this.state.categoryId)}</Text>
         <HeaderNav />
-        <Content>
+        <Content style={Styles.Container}>
           <Form>
+            {/* PILIH GAMBAR */}
+            <Button block style={Styles.UploadPictureButton} onPress={() => { this._uploadPicture() }}>
+              <Text>Pilih Gambar</Text>
+            </Button>
+
             {/* TITLE */}
             <InputGroup regular>
               <Input placeholder='Title' onChange={(event) => { this._onChangeTitle(event) }} />
@@ -239,7 +243,7 @@ class CreateAuction extends Component {
             <View style={styles.container}>
               <View style={styles.row}>
                 <View style={styles.cell}>
-                  <ModalDropdown style={styles.dropdown} options={rangeBid} onSelect={(idx, value) => this._onChangeKelipatanBid(idx, value)} />
+                  <ModalDropdown style={{ width: 200 }} options={rangeBid} onSelect={(idx, value) => this._onChangeKelipatanBid(idx, value)} />
                 </View>
               </View>
             </View>
@@ -266,25 +270,20 @@ class CreateAuction extends Component {
 
             {/* DATE END BID */}
             <DatePicker
-              style={{width: 200}}
+              style={{width: '100%'}}
               date={this.state.end_date}
               mode='datetime'
               format='YYYY-MM-DD HH:mm'
               confirmBtnText='Confirm'
               cancelBtnText='Cancel'
-              customStyles={{ dateIcon: { position: 'absolute', left: 0, top: 4, marginLeft: 0 }, dateInput: { marginLeft: 36 } }}
+              customStyles={{ dateIcon: { position: 'absolute', right: 0, top: 0, marginTop: 5 }}}
               minuteInterval={10}
               onDateChange={(datetime) => { this.setState({end_date: datetime}) }}
             />
 
-            {/* PILIH GAMBAR */}
-            <Button onPress={() => { this._uploadPicture() }}>
-              <Text>Pilih Gambar</Text>
-            </Button>
-
             {/* SUBMIT */}
-            <Button block onPress={() => { this._sendData() }} >
-              <Text>Submit</Text>
+            <Button block style={Styles.CreateAuctionButton} onPress={() => { this._sendData() }} >
+              <Text>Bikin Lelang</Text>
             </Button>
           </Form>
         </Content>
@@ -309,19 +308,22 @@ export default connect(mapStateToProps, mapDispatchToProps)(CreateAuction)
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    padding: 5
   },
   row: {
     flex: 1,
     flexDirection: 'row',
-    height: 20
+    height: 40
   },
   cell: {
     flex: 1,
+    width: 80,
+    height: 40,
     borderWidth: StyleSheet.hairlineWidth
   },
   dropdown: {
     flex: 1,
-    left: 8
+    width: '100%'
   }
 })

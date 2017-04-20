@@ -58,7 +58,6 @@ class Register extends Component {
   render () {
     return (
       <Container>
-        <Text> {`message: ` + JSON.stringify(this.props.register.dataUser)} </Text>
         <Content style={Styles.Container}>
           <Form>
             <H1 style={Styles.Logo}>BukaLelang</H1>
@@ -77,7 +76,6 @@ class Register extends Component {
             <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
               <Text>Daftar</Text>
             </Button>
-            <Text style={Styles.OrStyle}>OR</Text>
           </Form>
         </Content>
         <Footer>

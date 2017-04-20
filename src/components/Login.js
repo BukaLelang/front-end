@@ -72,7 +72,6 @@ class Login extends Component {
             <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
               <Text>Login</Text>
             </Button>
-            <Text style={Styles.OrStyle}>OR</Text>
           </Form>
         </Content>
         <Footer>
