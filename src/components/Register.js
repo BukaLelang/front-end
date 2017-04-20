@@ -71,7 +71,7 @@ class Register extends Component {
               <Input placeholder='Username' onChange={(event) => { this._onChangeInputUsername(event) }} />
             </InputGroup>
             <InputGroup regular>
-              <Input placeholder='Password' type='password' onChange={(event) => { this._onChangeInputPassword(event) }} />
+              <Input placeholder='Password' secureTextEntry={true} onChange={(event) => { this._onChangeInputPassword(event) }} />
             </InputGroup>
             <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
               <Text>Daftar</Text>

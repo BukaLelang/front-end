@@ -1,10 +1,13 @@
 import * as ActionTypes from '../actions/constants'
 
-const bidReducers = (state = { bids: [], bidsHistory: [] }, action) => {
+const bidReducers = (state = { bids: [], bidsHistory: [], bidStatus: {}}, action) => {
   switch (action.type) {
     case ActionTypes.LOAD_BIDS: {
       const currentBidsHistory = state.bidsHistory;
-      return Object.assign({}, state, { bidsHistory: [...currentBidsHistory] } )
+      return Object.assign({}, state, {
+        bidsHistory: [...currentBidsHistory],
+        bidStatus: action.payload
+       } )
     }
     case ActionTypes.LOAD_HISTORY_BIDS: {
       return Object.assign({}, state, { bidsHistory: [...action.payload.bid_history] })

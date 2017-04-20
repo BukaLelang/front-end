@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
-import SocketIOClient from 'socket.io-client'
-
-
+// import SocketIOClient from 'socket.io-client'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 import { Image, TouchableOpacity, AsyncStorage, View, Alert } from 'react-native'
@@ -21,7 +19,7 @@ class AuctionDetail extends Component {
       dataUser: {}
     }
 
-    this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
+    // this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
   }
 
   componentWillMount () {
@@ -51,13 +49,32 @@ class AuctionDetail extends Component {
   }
 
   componentDidMount () {
-    this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
-      this.setState({
-        bidPrice: newBidfromOther.current_price,
-        nextBidData: newBidfromOther
-      })
-      this.props.appendNewBid(newBidfromOther);
+    const _this = this
+    AsyncStorage.getItem('data')
+    .then((keyValue) => {
+      var data = JSON.parse(keyValue)
+      if (data === null) {
+        Actions.Login()
+      } else {
+        let dataInputBid = {
+          userId: data.id,
+          token: data.token,
+          auctionId: this.props.auctionBid.id
+        }
+        this.setState({
+          dataUser: dataInputBid
+        })
+        _this.props.fetchHistoryBids(dataInputBid)
+      }
     })
+    .catch(err => console.log(err))
+    // this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
+    //   this.setState({
+    //     bidPrice: newBidfromOther.current_price,
+    //     nextBidData: newBidfromOther
+    //   })
+    //   this.props.appendNewBid(newBidfromOther);
+    // })
   }
 
   addBidPrice () {
@@ -76,7 +93,7 @@ class AuctionDetail extends Component {
     let n = this.state.bidPrice
     n -= this.props.auctionBid.kelipatan_bid
 
-    if (n <= this.props.auctionBid.current_price)
+    if (n < this.props.auctionBid.current_price)
       Alert.alert('Warning', 'Harga tidak boleh lebih rendah dari harga sekarang', [{text: 'OK'}])
     else
       this.setState({
@@ -93,6 +110,15 @@ class AuctionDetail extends Component {
     }
     // add new bid to DB
     this.props.fetchBids(dataInputBid)
+
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log('bid status', )
+    if (nextProps.bidStatus.success)
+      Alert.alert('Success', 'Selamat! Anda Berhasil Bidding', [{text: 'OK'}])
+    else
+      Alert.alert('Warning', nextProps.bidStatus.message, [{text: 'OK'}])
   }
 
   render () {
@@ -118,67 +144,87 @@ class AuctionDetail extends Component {
             <CardItem cardBody>
               <Image style={{ resizeMode: 'cover', height: 250, width: '100%' }} source={{ uri: this.props.auctionBid.images }} />
             </CardItem>
+            <CardItem style={{ flexDirection: 'column' }}>
+              <Text style={{ color: '#000000', textAlign: 'left', fontWeight: 'bold', fontSize: 18 }}>{this.props.auctionBid.title}</Text>
+              <Text style={{ color: '#cbcbcb', textAlign: 'left', fontSize: 13 }}>Pelelang: {this.props.auctionBid.name}</Text>
+              <Text style={{ color: '#cbcbcb', textAlign: 'left', fontSize: 13  }}>Harga Maksimal:  {this.props.auctionBid.max_price}</Text>
+            </CardItem>
           </Card>
           {
             this.props.bid.length > 0 ?
-            [...this.props.bid].sort().map((item, index) => {
-              return (
-                <Card key={index}>
-                  <CardItem>
-                    <Body style={{ justifyContent: 'center'}}>
-                      <Text
-                        style={{
-                          color: '#C33149',
-                          fontWeight: 'bold',
-                          fontSize: 23,
-                          height: 25,
-                          width: '100%',
-                          textAlign: 'center',
-                        }}
-                      >
-                        Rp.{ String(item.bid_nominal) }
-                      </Text>
-                      <Button transparent style={{ justifyContent: 'space-between' }}>
-                        <View>
-                          <Text style={{ color: '#bcbcbc' }}>Bidder : { item.name_of_bidder }</Text>
-                        </View>
-                        <Text style={{ color: '#bcbcbc' }}>{ moment(item.bidding_time).startOf('hours').fromNow()}</Text>
-                      </Button>
-                    </Body>
-                  </CardItem>
-                </Card>
-              )
-            })
+              [...this.props.bid].sort(function(a, b) { return b-a }).map((item, index) => {
+                return (
+                  <Card key={index}>
+                    <CardItem>
+                      <Body style={{ justifyContent: 'center'}}>
+                        <Text
+                          style={{
+                            color: '#C33149',
+                            fontWeight: 'bold',
+                            fontSize: 23,
+                            height: 25,
+                            width: '100%',
+                            textAlign: 'center',
+                          }}
+                        >
+                          Rp.{ String(item.bid_nominal) }
+                        </Text>
+                        <Button transparent style={{ justifyContent: 'space-between' }}>
+                          <View>
+                            <Text style={{ color: '#bcbcbc' }}>Bidder : { item.name_of_bidder }</Text>
+                          </View>
+                          <Text style={{ color: '#bcbcbc' }}>{ moment(item.bidding_time).startOf('hours').fromNow()}</Text>
+                        </Button>
+                      </Body>
+                    </CardItem>
+                  </Card>
+                )
+              })
             :
             <Card>
               <CardItem>
                 <Body style={{ justifyContent: 'center'}}>
-                  <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 23, height: 25, width: '100%', textAlign: 'center' }}>Next Bid: Rp.{ this.props.auctionBid.current_price + this.props.auctionBid.kelipatan_bid}</Text>
+                  <Text style={{ color: '#C33149', color: '#C33149', fontWeight: 'bold', fontSize: 20, height: 25, width: '100%', textAlign: 'center' }}>Next Minimum Bid: Rp.{ String(this.props.auctionBid.current_price + this.props.auctionBid.kelipatan_bid)}</Text>
                   <Button transparent style={{ justifyContent: 'space-between' }}>
                     <View>
                       <Text style={{ color: '#bcbcbc' }}>Highest Bid : Rp.{this.props.auctionBid.current_price}</Text>
                     </View>
                     <Text style={{ color: '#bcbcbc' }}>{ moment().startOf('hours').fromNow()}</Text>
-                  </Button>  
+                  </Button>
                 </Body>
               </CardItem>
             </Card>
           }
           </Content>
-        <Footer style={{height: 40}}>
-          <FooterTab style={{ backgroundColor: '#E29A09' }}>
-            <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.distractBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>-</Text></Button>
-            <Text style={{ color: '#932437', fontWeight: 'bold', fontSize: 22, width: '55%', textAlign: 'center', paddingTop: 4, alignItems: 'center' }}>{ this.state.bidPrice + this.props.auctionBid.kelipatan_bid }</Text>
-            <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.addBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>+</Text></Button>
-          </FooterTab>
-        </Footer>
-        <Footer>
-          <FooterTab style={Styles.Footer}>
-            <Button onPress={() => this.bidNow()}>
-              <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>BID NOW</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
+          <View>
+            { (this.state.dataUser.userId === this.props.auctionBid.userId) ? (
+                <Footer>
+                  <FooterTab style={Styles.Footer}>
+                    <Button style={{ backgroundColor: 'grey' }} disabled>
+                      <Text style={{ color: 'white', fontSize: 14 }}>Anda tidak bisa bid di lelang sendiri</Text>
+                    </Button>
+                  </FooterTab>
+                </Footer>
+              ) : (
+                <View>
+                  <Footer style={{height: 40}}>
+                    <FooterTab style={{ backgroundColor: '#E29A09' }}>
+                      <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.distractBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>-</Text></Button>
+                      <Text style={{ color: '#932437', fontWeight: 'bold', fontSize: 22, width: '55%', textAlign: 'center', paddingTop: 4, alignItems: 'center' }}>{ this.state.bidPrice + this.props.auctionBid.kelipatan_bid }</Text>
+                      <Button danger style={{ backgroundColor: '#68A57B' }} onPress={() => this.addBidPrice()}><Text style={{ fontSize: 25, color: 'white' }}>+</Text></Button>
+                    </FooterTab>
+                  </Footer>
+                  <Footer>
+                    <FooterTab style={Styles.Footer}>
+                      <Button onPress={() => this.bidNow()}>
+                        <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>BID NOW</Text>
+                      </Button>
+                    </FooterTab>
+                  </Footer>
+                </View>
+              )
+            }
+        </View>
       </Container>
     )
   }
@@ -187,7 +233,8 @@ class AuctionDetail extends Component {
 const mapStateToProps = state => {
   return {
     auctionBid: state.auction.auctionBid,
-    bid: state.bid.bidsHistory
+    bid: state.bid.bidsHistory,
+    bidStatus: state.bid.bidStatus
   }
 }
 

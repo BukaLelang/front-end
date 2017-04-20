@@ -10,6 +10,10 @@ export default {
     backgroundColor: '#E29A09',
     margin: 8
   },
+  ParticipateButtonSelf: {
+    backgroundColor: '#4EAA6A',
+    margin: 8
+  },
   FooterText: {
     color: '#ffffff'
   },

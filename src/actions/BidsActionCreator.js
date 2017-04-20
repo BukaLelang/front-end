@@ -17,15 +17,9 @@ export const loadHistoryBids = data => {
 
 export const fetchBids = dataBid => {
   return dispatch => {
-    console.log('ini databid', dataBid);
     axios.post('http://api.bukalelang.id/bids', { auctionId: dataBid.auctionId, nextBid: dataBid.nextBid }, {headers: { userid: dataBid.userId, token: dataBid.token}})
       .then(response => dispatch(loadBids(response.data)))
       .catch(error => console.log('error'))
-
-    // let input = { userId: dataBid.userId, token: dataBid.token }
-    // axios.get('http://api.bukalelang.id/auctions/' + dataBid.auctionId + '/bid-history', {headers: input})
-    //   .then(response => dispatch(loadHistoryBids(response.data)))
-    //   .catch(error => console.log(error))
   }
 }
 
