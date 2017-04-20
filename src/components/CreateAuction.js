@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Actions } from 'react-native-router-flux'
 import { AsyncStorage, StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native'
-import { Container, Content, InputGroup, Input, Text, Form, Button } from 'native-base'
+import { Container, Content, InputGroup, Input, Text, Form, Button, Item, Label, Spinner } from 'native-base'
 import { connect } from 'react-redux'
 import ImagePicker from 'react-native-image-picker'
 import { btoa } from 'Base64'
@@ -55,7 +55,8 @@ class CreateAuction extends Component {
     // for categoryId
       category: categoryId,
       categoryAfterFilter: [],
-      placeholderForCategoryName: 'Pilih Kategori'
+      placeholderForCategoryName: 'Pilih Kategori',
+      loading: null
     }
   }
 
@@ -122,6 +123,7 @@ class CreateAuction extends Component {
       if (response.didCancel) console.log('User cancelled image picker')
       else if (response.error) console.log('ImagePicker Error: ', response.error)
       else {
+        this.setState({loading: true})
         let source = { image: response.uri }
         this.setState({imagesId: source})
 
@@ -153,6 +155,7 @@ class CreateAuction extends Component {
           console.log(responseResult)
           responseResult.then(function (data) {
             self.setState({ imagesIdFromBl: data.id })
+            self.setState({loading: false})
           })
         })
         .catch(err => {
@@ -203,19 +206,20 @@ class CreateAuction extends Component {
         <HeaderNav />
         <Content style={Styles.Container}>
           <Form>
-            {/* PILIH GAMBAR */}
-            <Button block style={Styles.UploadPictureButton} onPress={() => { this._uploadPicture() }}>
-              <Text>Pilih Gambar</Text>
-            </Button>
-
             {/* TITLE */}
-            <InputGroup regular>
-              <Input placeholder='Title' onChange={(event) => { this._onChangeTitle(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Judul Lelang</Label>
+                <Input success onChange={(event) => { this._onChangeTitle(event) }} />
+              </Item>
             </InputGroup>
 
             {/* KATEGORI ID */}
-            <InputGroup regular>
-              <Input placeholder={this.state.placeholderForCategoryName} onChange={(event) => { this._filterSearchCategory(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>{this.state.placeholderForCategoryName}</Label>
+                <Input onChange={(event) => { this._filterSearchCategory(event) }} />
+              </Item>
             </InputGroup>
 
             <ScrollView>
@@ -233,7 +237,12 @@ class CreateAuction extends Component {
             <View style={styles.container}>
               <View style={styles.row}>
                 <View style={styles.cell}>
-                  <ModalDropdown style={styles.dropdown} options={itemCondition} onSelect={(value) => this._onChangeNew(value)} />
+                  <ModalDropdown
+                    textStyle={styles.dropdownText}
+                    style={styles.dropdown}
+                    dropdownStyle={styles.dropdownTitleCondition}
+                    defaultValue='Silahkan pilih...'
+                    options={itemCondition} onSelect={(value) => this._onChangeNew(value)} />
                 </View>
               </View>
             </View>
@@ -243,29 +252,46 @@ class CreateAuction extends Component {
             <View style={styles.container}>
               <View style={styles.row}>
                 <View style={styles.cell}>
-                  <ModalDropdown style={{ width: 200 }} options={rangeBid} onSelect={(idx, value) => this._onChangeKelipatanBid(idx, value)} />
+                  <ModalDropdown
+                    textStyle={styles.dropdownText}
+                    style={styles.dropdown}
+                    dropdownStyle={styles.dropdownTitlePrice}
+                    defaultValue='Silahkan pilih...'
+                    options={rangeBid} onSelect={(idx, value) => this._onChangeKelipatanBid(idx, value)} />
                 </View>
               </View>
             </View>
 
             {/* PERKIRAAN BERAT */}
-            <InputGroup regular>
-              <Input placeholder='Perkiraan berat' keyboardType={'numeric'} onChange={(event) => { this._onChangeWeight(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Perkiraan berat (Gr)</Label>
+                <Input keyboardType={'numeric'} onChange={(event) => { this._onChangeWeight(event) }} />
+              </Item>
             </InputGroup>
 
             {/* DESKRIPSI BARANG */}
-            <InputGroup regular>
-              <Input placeholder='Description' onChange={(event) => { this._onChangeDescription(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Deskripsi Barang</Label>
+                <Input onChange={(event) => { this._onChangeDescription(event) }} />
+              </Item>
             </InputGroup>
 
             {/* MIN PRICE */}
-            <InputGroup regular>
-              <Input placeholder='Min. Price' keyboardType={'numeric'} onChange={(event) => { this._onChangeMinPrice(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Harga Minimal (Idr)</Label>
+                <Input keyboardType={'numeric'} onChange={(event) => { this._onChangeMinPrice(event) }} />
+              </Item>
             </InputGroup>
 
             {/* MAX PRICE */}
-            <InputGroup regular>
-              <Input placeholder='Max. Price' keyboardType={'numeric'} onChange={(event) => { this._onChangeMaxPrice(event) }} />
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Harga Maksimal (Idr)</Label>
+                <Input keyboardType={'numeric'} onChange={(event) => { this._onChangeMaxPrice(event) }} />
+              </Item>
             </InputGroup>
 
             {/* DATE END BID */}
@@ -276,15 +302,29 @@ class CreateAuction extends Component {
               format='YYYY-MM-DD HH:mm'
               confirmBtnText='Confirm'
               cancelBtnText='Cancel'
-              customStyles={{ dateIcon: { position: 'absolute', right: 0, top: 0, marginTop: 5 }}}
+              customStyles={{dateIcon: { position: 'absolute', right: 0, top: 0, marginTop: 5 }}}
               minuteInterval={10}
               onDateChange={(datetime) => { this.setState({end_date: datetime}) }}
             />
 
-            {/* SUBMIT */}
-            <Button block style={Styles.CreateAuctionButton} onPress={() => { this._sendData() }} >
-              <Text>Bikin Lelang</Text>
-            </Button>
+            {/* UPLOAD GAMBAR */}
+            { this.state.loading ? (
+              <Spinner color='#68A57B' />
+            ) : (
+              <Button block style={Styles.UploadPictureButton} onPress={() => { this._uploadPicture() }} >
+                <Text>Upload Gambar</Text>
+              </Button>
+            ) }
+
+            {/* LOGIN BUTTON */}
+            { this.state.imagesIdFromBl ? (
+              <Button block style={Styles.CreateAuctionButton} onPress={() => { this._sendData() }} >
+                <Text>Bikin Lelang</Text>
+              </Button>
+            ) : (
+              null
+            ) }
+
           </Form>
         </Content>
       </Container>
@@ -310,6 +350,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 5
+  },
+  dropdownText: {
+    marginVertical: 10,
+    marginHorizontal: 6,
+    fontSize: 15,
+    color: 'black'
+  },
+  dropdownTitleCondition: {
+    width: 327,
+    height: 75,
+    borderColor: '#991a00',
+    borderWidth: 1
+  },
+  dropdownTitlePrice: {
+    width: 327,
+    height: 150,
+    borderColor: '#991a00',
+    borderWidth: 1
   },
   row: {
     flex: 1,

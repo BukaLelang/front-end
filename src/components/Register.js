@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Alert, AsyncStorage } from 'react-native'
-import { Container, Content, Form, Input, Button, Text, InputGroup, H1, Footer, FooterTab } from 'native-base'
+import { Alert, AsyncStorage, Image } from 'react-native'
+import { Container, Content, Form, Input, Button, Text, InputGroup, Footer, FooterTab, Spinner, Item, Label } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 
@@ -15,7 +15,8 @@ class Register extends Component {
       email: '',
       username: '',
       password: '',
-      message: ''
+      message: '',
+      loading: null
     }
   }
 
@@ -36,6 +37,7 @@ class Register extends Component {
   }
 
   _sendData () {
+    this.setState({loading: true})
     let input = {
       name: this.state.name,
       email: this.state.email,
@@ -49,6 +51,7 @@ class Register extends Component {
         AsyncStorage.setItem('data', JSON.stringify(dataResultAfterFetch)),
         Actions.Home()
       ) : (
+        this.setState({loading: null}),
         Alert.alert(dataResultAfterFetch.message)
       )
     }
@@ -61,21 +64,47 @@ class Register extends Component {
         <Content style={Styles.Container}>
           <Image source={require('../assets/images/bukalelang-banner-versi-reverse.png')} style={{ width: 250, height: 200, resizeMode: 'contain', marginLeft: 15 }} />
           <Form>
-            <InputGroup regular>
-              <Input placeholder='Nama Lengkap' onChange={(event) => { this._onChangeInputName(event) }} />
+            {/* NAMA LENGKAP */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Nama Lengkap</Label>
+                <Input onChange={(event) => { this._onChangeInputName(event) }} />
+              </Item>
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Email' onChange={(event) => { this._onChangeInputEmail(event) }} />
+
+            {/* EMAIL */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Email</Label>
+                <Input onChange={(event) => { this._onChangeInputEmail(event) }} />
+              </Item>
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Username' onChange={(event) => { this._onChangeInputUsername(event) }} />
+
+            {/* USERNAME */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Username</Label>
+                <Input onChange={(event) => { this._onChangeInputUsername(event) }} />
+              </Item>
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Password' secureTextEntry={true} onChange={(event) => { this._onChangeInputPassword(event) }} />
+
+            {/* PASSWORD */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Password</Label>
+                <Input secureTextEntry type='password' onChange={(event) => { this._onChangeInputPassword(event) }} />
+              </Item>
             </InputGroup>
-            <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
-              <Text>Daftar</Text>
-            </Button>
+
+            {/* LOGIN BUTTON */}
+            { this.state.loading ? (
+              <Spinner color='#68A57B' />
+            ) : (
+              <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
+                <Text>Daftar</Text>
+              </Button>
+            ) }
+
           </Form>
         </Content>
         <Footer>

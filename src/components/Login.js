@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { AsyncStorage, Alert, Image } from 'react-native'
-import { Container, Content, Form, Input, Button, Text, InputGroup, H1, Footer, FooterTab } from 'native-base'
+import { Container, Content, Form, Input, Button, Text, InputGroup, Footer, FooterTab, Spinner, Icon, Item, Label } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 
@@ -12,7 +12,8 @@ class Login extends Component {
     super(props)
     this.state = {
       username: '',
-      password: ''
+      password: '',
+      loading: null
     }
   }
 
@@ -39,6 +40,7 @@ class Login extends Component {
   }
 
   _sendData () {
+    this.setState({loading: true})
     let input = {
       username: this.state.username,
       password: this.state.password
@@ -50,9 +52,11 @@ class Login extends Component {
         AsyncStorage.setItem('data', JSON.stringify(dataResultAfterFetch)),
         Actions.Home()
       ) : (
+        this.setState({loading: null}),
         Alert.alert(dataResultAfterFetch.message)
       )
     }
+
     this.props.fetchDataForLogin(input, callback)
   }
 
@@ -62,15 +66,30 @@ class Login extends Component {
         <Content style={Styles.Container}>
           <Image source={require('../assets/images/bukalelang-banner-versi-reverse.png')} style={{ width: 250, height: 200, resizeMode: 'contain', marginLeft: 15 }} />
           <Form>
-            <InputGroup regular>
-              <Input placeholder='Username' onChange={(event) => { this._onChangeInputUsername(event) }} />
+            {/* USERNAME */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Username</Label>
+                <Input onChange={(event) => { this._onChangeInputUsername(event) }} />
+              </Item>
             </InputGroup>
-            <InputGroup regular>
-              <Input placeholder='Password' secureTextEntry={true} type='password' onChange={(event) => { this._onChangeInputPassword(event) }} />
+
+            {/* PASSWORD */}
+            <InputGroup success>
+              <Item floatingLabel>
+                <Label>Password</Label>
+                <Input type='password' secureTextEntry onChange={(event) => { this._onChangeInputPassword(event) }} />
+              </Item>
             </InputGroup>
-            <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
-              <Text>Login</Text>
-            </Button>
+
+            {/* LOGIN BUTTON */}
+            { this.state.loading ? (
+              <Spinner color='#68A57B' />
+            ) : (
+              <Button block style={Styles.LoginButton} onPress={() => { this._sendData() }} >
+                <Text>Login</Text>
+              </Button>
+            ) }
           </Form>
         </Content>
         <Footer>

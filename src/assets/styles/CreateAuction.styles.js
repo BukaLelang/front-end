@@ -6,6 +6,7 @@ export default {
   },
   UploadPictureButton: {
     backgroundColor: '#E29A09',
+    marginTop: 10
   },
   CreateAuctionButton: {
     backgroundColor: '#2EC4B6',
