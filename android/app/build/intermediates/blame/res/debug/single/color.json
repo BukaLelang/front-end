@@ -4,12 +4,12 @@
         "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
-        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
         "source": "/home/endy/darwins-fox-2017/front-end (copy)/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/endy/darwins-fox-2017/phase 3/bukalelang-frontend-register-login/BukaLelang/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "/home/endy/darwins-fox-2017/front-end/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",

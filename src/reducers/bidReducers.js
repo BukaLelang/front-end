@@ -9,6 +9,9 @@ const bidReducers = (state = { bids: [], bidsHistory: [], bidStatus: {}}, action
         bidStatus: action.payload
        } )
     }
+    case ActionTypes.RESET_BID_STATUS: {
+      return Object.assign({}, state, { bidStatus: {} })
+    }
     case ActionTypes.LOAD_HISTORY_BIDS: {
       return Object.assign({}, state, { bidsHistory: [...action.payload.bid_history] })
     }

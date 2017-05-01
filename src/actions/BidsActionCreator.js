@@ -23,6 +23,10 @@ export const fetchBids = dataBid => {
   }
 }
 
+export const resetBidStatus = () => ({
+  type: ActionTypes.RESET_BID_STATUS,
+})
+
 // FOR GET HISTORY BID WHEN USER GO TO AUCTION DETAILS
 export const fetchHistoryBids = dataBid => {
   return dispatch => {

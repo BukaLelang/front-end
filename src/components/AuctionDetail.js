@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import moment from 'moment'
-// import SocketIOClient from 'socket.io-client'
+import SocketIOClient from 'socket.io-client'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
 import { Image, TouchableOpacity, AsyncStorage, View, Alert } from 'react-native'
 import { Container, Content, Card, CardItem, Button, Footer, FooterTab, Icon, Header, Left, Body, Title, Spinner, Text } from 'native-base'
 
 import Styles from '../assets/styles/Home.styles'
-import { fetchBids, fetchHistoryBids, appendNewBid } from '../actions'
+import { fetchBids, fetchHistoryBids, appendNewBid, resetBidStatus } from '../actions'
 import Currency from '../helpers/currency'
 
 class AuctionDetail extends Component {
@@ -19,11 +19,12 @@ class AuctionDetail extends Component {
       dataUser: {}
     }
 
-    // this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
+    this.socket = SocketIOClient('http://bukalelang-backend-dev.ap-southeast-1.elasticbeanstalk.com')
   }
 
   componentWillMount () {
     const _this = this
+    this.props.resetBidStatus()
     AsyncStorage.getItem('data')
     .then((keyValue) => {
       var data = JSON.parse(keyValue)
@@ -68,13 +69,14 @@ class AuctionDetail extends Component {
       }
     })
     .catch(err => console.log(err))
-    // this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
-    //   this.setState({
-    //     bidPrice: newBidfromOther.current_price,
-    //     nextBidData: newBidfromOther
-    //   })
-    //   this.props.appendNewBid(newBidfromOther);
-    // })
+
+    this.socket.on('auction-' + this.props.auctionBid.id, (newBidfromOther) => {
+      this.setState({
+        bidPrice: newBidfromOther.current_price,
+        nextBidData: newBidfromOther
+      })
+      this.props.appendNewBid(newBidfromOther);
+    })
   }
 
   addBidPrice () {
@@ -110,15 +112,19 @@ class AuctionDetail extends Component {
     }
     // add new bid to DB
     this.props.fetchBids(dataInputBid)
-
+    this.props.resetBidStatus()
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log('bid status', )
-    if (nextProps.bidStatus.success)
-      Alert.alert('Success', 'Selamat! Anda Berhasil Bidding', [{text: 'OK'}])
-    else
-      Alert.alert('Warning', nextProps.bidStatus.message, [{text: 'OK'}])
+    // if (nextProps.bidStatus.success !== undefined && this.props.bidStatus.success !== nextProps.bidStatus.success) {
+    //   if (nextProps.bidStatus.success) {
+    //     Alert.alert('Success', 'Selamat! Anda Berhasil Bidding', [{text: 'OK'}])
+    //     console.log('success')
+    //   } else {
+    //     Alert.alert('Warning', nextProps.bidStatus.message, [{text: 'OK'}])
+    //     console.log('failed')
+    //   }
+    // }
   }
 
   render () {
@@ -140,6 +146,16 @@ class AuctionDetail extends Component {
           </Body>
         </Header>
         <Content>
+          <View>
+          { (this.props.bidStatus.success !== undefined && this.props.bidStatus.success) ? (
+            <View style={{ width: '100%', backgroundColor: 'green', top: 0, padding: 10, alignItems: 'center' }}>
+              <Text style={{ textAlign: 'center', color: '#FFFFFF' }}>Kamu sukses melakukan bidding!</Text>
+            </View>) : true }
+            { (this.props.bidStatus.success !== undefined && !this.props.bidStatus.success) ? (
+              <View style={{ width: '100%', backgroundColor: 'red', top: 0, padding: 10, alignItems: 'center' }}>
+                <Text style={{ textAlign: 'center', color: '#FFFFFF' }}>{ this.props.bidStatus.message }</Text>
+              </View>) : true }
+          </View>
           <Card>
             <CardItem cardBody>
               <Image style={{ resizeMode: 'cover', height: 250, width: '100%' }} source={{ uri: this.props.auctionBid.images }} />
@@ -242,7 +258,8 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchBids: (dataBid) => dispatch(fetchBids(dataBid)),
     fetchHistoryBids: (dataBid) => dispatch(fetchHistoryBids(dataBid)),
-    appendNewBid: (newBid) => dispatch(appendNewBid(newBid))
+    appendNewBid: (newBid) => dispatch(appendNewBid(newBid)),
+    resetBidStatus: () => dispatch(resetBidStatus()),
   }
 }
 

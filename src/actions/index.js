@@ -2,7 +2,7 @@ import { fetchDataForRegister } from './RegisterActionsCreator'
 import { fetchDataForLogin } from './LoginActionsCreator'
 import { fetchDataForCreateAuction } from './CreateAuctionsCreator'
 import { loadAuctions, fetchAuctions, loadAuctionById } from './AuctionsActionCreator'
-import { fetchBids, fetchHistoryBids, appendNewBid } from './BidsActionCreator'
+import { fetchBids, fetchHistoryBids, appendNewBid, resetBidStatus } from './BidsActionCreator'
 import { fetchDataForGetJoinedAuctionsData } from './JoinedAuctionsCreator'
 
 export {
@@ -13,6 +13,7 @@ export {
   fetchAuctions,
   loadAuctionById,
   fetchBids,
+  resetBidStatus,
   fetchHistoryBids,
   appendNewBid,
   fetchDataForGetJoinedAuctionsData
